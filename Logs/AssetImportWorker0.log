@@ -970,3 +970,179 @@ Received Import Request.
 Start importing Assets/Flooded_Grounds/Content/Materials using Guid(5c3f1ab731e541841b79f7a5d2f1b27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c7dc9f5d9090c476392e77b16409f5') in 0.000291 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 638.503238 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(bc3f302225818a243b5642a86589b759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(bc3f302225818a243b5642a86589b759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b001b907bed673cc4ec2809e53d004') in 0.000259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.678723 seconds.
+  path: Assets/MyScenes/HorrorScene/LightingData.asset
+  artifactKey: Guid(6efd8c71102ec3143bfc443275e52415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/LightingData.asset using Guid(6efd8c71102ec3143bfc443275e52415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd76723e7a3107eb7b25fbb10c148afc') in 0.009040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-3_comp_light.exr
+  artifactKey: Guid(7d2a22882a56c484dbd87d4571a00f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-3_comp_light.exr using Guid(7d2a22882a56c484dbd87d4571a00f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42607e432c93b7cf9b772b330472576e') in 0.084968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-2_comp_light.exr
+  artifactKey: Guid(f5078aed07076c84b9e812580890c3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-2_comp_light.exr using Guid(f5078aed07076c84b9e812580890c3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419efcffd065d4b927165e596996bb23') in 0.004563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-15_comp_light.exr
+  artifactKey: Guid(508e1a724cd5f394f9b97646b95c342c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-15_comp_light.exr using Guid(508e1a724cd5f394f9b97646b95c342c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94351451dd6638e47662d47ea59af3b') in 0.004477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-13_comp_light.exr
+  artifactKey: Guid(a9dbe5a27c489ea469ab7436e6a40ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-13_comp_light.exr using Guid(a9dbe5a27c489ea469ab7436e6a40ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2acaf65d09991d97521fd41ff6e78d') in 0.005170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-0_comp_light.exr
+  artifactKey: Guid(762d040be50b138478accdea46b6e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-0_comp_light.exr using Guid(762d040be50b138478accdea46b6e86a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3f428d3b22d0e097ddc05b87f25ca8') in 0.012026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-2_comp_dir.png
+  artifactKey: Guid(941b48cdb42ac5e43b14dccb173bbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-2_comp_dir.png using Guid(941b48cdb42ac5e43b14dccb173bbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472a44ccfb874256e0dcc62ce831f999') in 0.008385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-12_comp_light.exr
+  artifactKey: Guid(e9cfeba7a4119f84eabc74f76382ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-12_comp_light.exr using Guid(e9cfeba7a4119f84eabc74f76382ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7a63bb8057db41319d3b577356d76b') in 0.004837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-7_comp_light.exr
+  artifactKey: Guid(616bc66df3d612745821ebdc29a2e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-7_comp_light.exr using Guid(616bc66df3d612745821ebdc29a2e3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9156b5c76d042212466661f72e6d47') in 0.010935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-11_comp_light.exr
+  artifactKey: Guid(4a5f0092b9556ee498d5e108eeed96a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-11_comp_light.exr using Guid(4a5f0092b9556ee498d5e108eeed96a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '939ca4d453840cd775028417f53f1876') in 0.004850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-9_comp_dir.png
+  artifactKey: Guid(32bed10d2ac7cc74bb931571fe2b0f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-9_comp_dir.png using Guid(32bed10d2ac7cc74bb931571fe2b0f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c760ea4654c02da1be76953b592f02b5') in 0.005243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-8_comp_dir.png
+  artifactKey: Guid(752fe962eed2b574daf4cc96ad493a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-8_comp_dir.png using Guid(752fe962eed2b574daf4cc96ad493a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ff55bb1c53c9d8bea2dcbbd00a6f4e') in 0.005606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-11_comp_dir.png
+  artifactKey: Guid(34f0abe117b5a664aa91cf5ec0fb6f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-11_comp_dir.png using Guid(34f0abe117b5a664aa91cf5ec0fb6f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e272af97808682837af580ce357851b0') in 0.011453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-15_comp_dir.png
+  artifactKey: Guid(312bfe65d627d9c4fa82bfe10e7788e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-15_comp_dir.png using Guid(312bfe65d627d9c4fa82bfe10e7788e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1100856e3c56e7e1a32c4350ccf4088') in 0.005025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-12_comp_dir.png
+  artifactKey: Guid(31c7371690dc0e1458555d11d367b139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-12_comp_dir.png using Guid(31c7371690dc0e1458555d11d367b139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cffd8c7f237ecac897e55a4bae481c3') in 0.005298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/MyScenes/HorrorScene/Lightmap-4_comp_dir.png
+  artifactKey: Guid(6cfd573eae476ab41b1ffe25c5592fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene/Lightmap-4_comp_dir.png using Guid(6cfd573eae476ab41b1ffe25c5592fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffa869b77bab812ac766ffb4e547c0b') in 0.004928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 49.935470 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/FirstPersonCharacter Profile 1.asset
+  artifactKey: Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/FirstPersonCharacter Profile 1.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ae66e32bed3c8f5535a1307eca298a') in 0.007599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 90.165255 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/NightVision.asset
+  artifactKey: Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/NightVision.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029fa6005e12abc90dda3d658383586e') in 0.001162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 4794.661611 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/NightVision.asset
+  artifactKey: Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/NightVision.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaa50097a6b2c05613cd1405d792f8f') in 0.001337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 303.855719 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/NightVision.asset
+  artifactKey: Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/NightVision.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e2e079e287ba69227291fd8da23447') in 0.001084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 150.855675 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/NightVision.asset
+  artifactKey: Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/NightVision.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e478ac7620b8b1dc525f88c1b3898e') in 0.001145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
