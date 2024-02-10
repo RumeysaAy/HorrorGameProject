@@ -1146,3 +1146,221 @@ Received Import Request.
 Start importing Assets/MyScenes/HorrorScene_Profiles/NightVision.asset using Guid(1b88bb2e125f84d4e823afb62b7b0e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e478ac7620b8b1dc525f88c1b3898e') in 0.001145 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 353.107807 seconds.
+  path: Assets/MyScenes/HorrorScene_Profiles/New Folder
+  artifactKey: Guid(328a482cf11d94e7c9a51e7213f79fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyScenes/HorrorScene_Profiles/New Folder using Guid(328a482cf11d94e7c9a51e7213f79fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6700133a5276aadea5bea8c88fae9b38') in 0.000317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.565960 seconds.
+  path: Assets/UI graphics
+  artifactKey: Guid(5ad2406ff252a4031a5129974f26530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics using Guid(5ad2406ff252a4031a5129974f26530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71093e467cc2e6b3c4bc765a8f60c3cb') in 0.000313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 672.986529 seconds.
+  path: Assets/UI graphics/Nightvision Overlay
+  artifactKey: Guid(348f2d58f5e904c3eba506210c524006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay using Guid(348f2d58f5e904c3eba506210c524006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b262aac44222ebde2b4d6ed687c296f') in 0.000470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.035151 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryChunks.png
+  artifactKey: Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryChunks.png using Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8652560117606fe676f29846f1c5f4f8') in 0.005338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/WT.png
+  artifactKey: Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/WT.png using Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994f36245c4ec4660f9f43a9ce033620') in 0.004213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/scanlines.tif
+  artifactKey: Guid(92b4ffe94fd944199bdd4509e3f9b01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/scanlines.tif using Guid(92b4ffe94fd944199bdd4509e3f9b01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521337cbf8cead8deecd10f863d783e1') in 0.006959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 142.596002 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryOuter.png
+  artifactKey: Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryOuter.png using Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12d48da89912b40dc7bf40a859c539a') in 0.016248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.020552 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryChunks.png
+  artifactKey: Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryChunks.png using Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace6eb0dd9d784ca9ce08e6d92f93d5d') in 0.004568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/WT.png
+  artifactKey: Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/WT.png using Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524060d2c2ff66fe0e4f96c604bcc9fb') in 0.005492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/ZoomBar.png
+  artifactKey: Guid(7456185b50812470da70d1ffec8ca9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/ZoomBar.png using Guid(7456185b50812470da70d1ffec8ca9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3be28e8ba0ba28769c5c4ccf274e47') in 0.010431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 249.488964 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryChunks.png
+  artifactKey: Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryChunks.png using Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abb9e75102bcf4ad330c2c32b0f1a49') in 0.008143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 84.551111 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryOuter.png
+  artifactKey: Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryOuter.png using Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6b6d4c9ceb5f6d3a6ef180773aeb48') in 0.006271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 41.636508 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryOuter.png
+  artifactKey: Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryOuter.png using Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4717750cff61c2017bdee8cc02a2c381') in 0.006083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.771585 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryChunks.png
+  artifactKey: Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryChunks.png using Guid(a222c426c072043dbb6a06ef480cf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b67392316f37cfb9818896fe89b3fae2') in 0.007759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 32.688937 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/BatteryOuter.png
+  artifactKey: Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/BatteryOuter.png using Guid(7b2a906070c754231a538130a1a3f956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c16c0e7f1438e9fd7e8661f16944635') in 0.007424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 31.967974 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/Crosshair.png
+  artifactKey: Guid(86e01494701584af88c0cd6889378216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/Crosshair.png using Guid(86e01494701584af88c0cd6889378216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12ceacde3358ec1f1ef786df7d8f43a') in 0.006787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.345768 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/scanlines.tif
+  artifactKey: Guid(92b4ffe94fd944199bdd4509e3f9b01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/scanlines.tif using Guid(92b4ffe94fd944199bdd4509e3f9b01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da52bbf0d8ad5bf89602113b75c08c4') in 0.006076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.314823 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/WT.png
+  artifactKey: Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/WT.png using Guid(95f87fcb2e772404385e9ee6e042940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c27fe179c9d279170f1b1846b2b786') in 0.006039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.854506 seconds.
+  path: Assets/UI graphics/Nightvision Overlay/ZoomBar.png
+  artifactKey: Guid(7456185b50812470da70d1ffec8ca9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI graphics/Nightvision Overlay/ZoomBar.png using Guid(7456185b50812470da70d1ffec8ca9d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff1247479bc67694a4510a73067f8ee') in 0.005479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x28f2d3000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.137 seconds
+Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.272 seconds
+Domain Reload Profiling: 410ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (10ms)
+		LoadAssemblies (39ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (272ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (165ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (21ms)
+			ProcessInitializeOnLoadAttributes (103ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (2.0 MB). Loaded Objects now: 1434.
+Memory consumption went from 142.9 MB to 140.9 MB.
+Total: 2.413208 ms (FindLiveObjects: 0.058208 ms CreateObjectMapping: 0.014458 ms MarkObjects: 1.942292 ms  DeleteObjects: 0.397750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
