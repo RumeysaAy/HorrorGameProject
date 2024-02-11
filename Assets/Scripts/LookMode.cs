@@ -30,6 +30,7 @@ public class LookMode : MonoBehaviour
                 vol.profile = nightVision;
                 nightVisionOverlay.SetActive(true);
                 nightVisionOn = true;
+                NightVisionOff(); // Pilimizde güç yoksa gece görüşünün hiç açılmasını istemeyiz.
             }
             else if (nightVisionOn == true)
             { // eğer gece görüşü açıksa N'e tıklandığında kapansın
@@ -38,6 +39,22 @@ public class LookMode : MonoBehaviour
                 this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
                 nightVisionOn = false;
             }
+        }
+
+        if (nightVisionOn == true)
+        {
+            NightVisionOff(); // Pilimizde güç yoksa gece görüşünün hiç açılmasını istemeyiz.
+        }
+    }
+
+    private void NightVisionOff()
+    { // Pil gücü bittiğinde yani sıfıra ulaştığında gece görüş modu kapanıp standart mod tekrar açılacak.
+        if (nightVisionOverlay.GetComponent<NightVisionScipt>().batteryPower <= 0)
+        {
+            vol.profile = standard;
+            nightVisionOverlay.SetActive(false);
+            this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
+            nightVisionOn = false;
         }
     }
 }
