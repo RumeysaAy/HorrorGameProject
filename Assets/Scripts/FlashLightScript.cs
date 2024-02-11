@@ -13,11 +13,11 @@ public class FlashLightScript : MonoBehaviour
     public float batteryPower = 1.0f;
     public float drainTime = 2;
 
-    // Start is called before the first frame update
-    void Start()
+    // bu dosya her çağrıldığında bu metot çalıştırılır.
+    void OnEnable()
     {
         batteryChunks = GameObject.Find("FLBatteryChunks").GetComponent<Image>();
-        InvokeRepeating("FLBatteryDrain", drainTime, drainTime);
+        InvokeRepeating("FLBatteryDrain", drainTime, drainTime); // el fenerini kapattığımızda pil azalmaya devam eder
     }
 
     // Update is called once per frame
@@ -32,5 +32,11 @@ public class FlashLightScript : MonoBehaviour
         {
             batteryPower -= 0.25f;
         }
+    }
+
+    // LookMode.cs dosyasında çağıracağım
+    public void StopDrain()
+    { // el fenerini kapattığımızda pilin azalmasını engellemek için
+        CancelInvoke("FLBatteryDrain");
     }
 }

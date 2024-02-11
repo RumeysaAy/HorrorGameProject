@@ -9,13 +9,19 @@ public class LookMode : MonoBehaviour
     public PostProcessProfile standard; // normal görüş
     public PostProcessProfile nightVision; // gece görüşü
     public GameObject nightVisionOverlay; // gece görüş UI
+    public GameObject flashLightOverlay; // el feneri UI
+    private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
+    private bool flashLightOn = false;
 
     // Start is called before the first frame update
     void Start()
     {
         vol = GetComponent<PostProcessVolume>();
+        flashLight = GameObject.Find("FlashLight").GetComponent<Light>(); // el fenerinin(spotlight) ışık bileşeni
+        flashLight.enabled = false;
         nightVisionOverlay.SetActive(false);
+        flashLightOverlay.SetActive(false);
         vol.profile = standard;
     }
 
@@ -36,8 +42,26 @@ public class LookMode : MonoBehaviour
             { // eğer gece görüşü açıksa N'e tıklandığında kapansın
                 vol.profile = standard;
                 nightVisionOverlay.SetActive(false);
+                nightVisionOverlay.GetComponent<NightVisionScript>().StopDrain(); // gece görüşü pilin azalmasını engeller
                 this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
                 nightVisionOn = false;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (flashLightOn == false)
+            {
+                flashLightOverlay.SetActive(true);
+                flashLight.enabled = true; // el fenerinin ışığını aç
+                flashLightOn = true;
+            }
+            else if (flashLightOn == true)
+            {
+                flashLightOverlay.SetActive(false);
+                flashLight.enabled = false; // el fenerinin ışığını kapat
+                flashLightOverlay.GetComponent<FlashLightScript>().StopDrain(); // el feneri pilin azalmasını engeller
+                flashLightOn = false;
             }
         }
 
@@ -49,7 +73,7 @@ public class LookMode : MonoBehaviour
 
     private void NightVisionOff()
     { // Pil gücü bittiğinde yani sıfıra ulaştığında gece görüş modu kapanıp standart mod tekrar açılacak.
-        if (nightVisionOverlay.GetComponent<NightVisionScipt>().batteryPower <= 0)
+        if (nightVisionOverlay.GetComponent<NightVisionScript>().batteryPower <= 0)
         {
             vol.profile = standard;
             nightVisionOverlay.SetActive(false);

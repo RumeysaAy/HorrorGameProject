@@ -359,7 +359,7 @@
 "Assets/Scripts/FlashLightScript.cs"
 "Assets/Scripts/LightHouseRotator.cs"
 "Assets/Scripts/LookMode.cs"
-"Assets/Scripts/NightVisionScipt.cs"
+"Assets/Scripts/NightVisionScript.cs"
 "Assets/Scripts/UIScale.cs"
 -langversion:9.0
 
