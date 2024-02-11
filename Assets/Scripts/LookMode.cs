@@ -55,6 +55,7 @@ public class LookMode : MonoBehaviour
                 flashLightOverlay.SetActive(true);
                 flashLight.enabled = true; // el fenerinin ışığını aç
                 flashLightOn = true;
+                FlashLightSwitchOff();
             }
             else if (flashLightOn == true)
             {
@@ -69,6 +70,11 @@ public class LookMode : MonoBehaviour
         {
             NightVisionOff(); // Pilimizde güç yoksa gece görüşünün hiç açılmasını istemeyiz.
         }
+
+        if (flashLightOn == true)
+        {
+            FlashLightSwitchOff();
+        }
     }
 
     private void NightVisionOff()
@@ -79,6 +85,17 @@ public class LookMode : MonoBehaviour
             nightVisionOverlay.SetActive(false);
             this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
             nightVisionOn = false;
+        }
+    }
+
+    private void FlashLightSwitchOff()
+    {
+        if (flashLightOverlay.GetComponent<FlashLightScript>().batteryPower <= 0)
+        {
+            flashLightOverlay.SetActive(false);
+            flashLight.enabled = false;
+            flashLightOverlay.GetComponent<FlashLightScript>().StopDrain();
+            flashLightOn = false;
         }
     }
 }
