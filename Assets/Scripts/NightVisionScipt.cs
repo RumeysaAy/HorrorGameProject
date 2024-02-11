@@ -15,6 +15,14 @@ public class NightVisionScipt : MonoBehaviour
         cam = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>();
     }
 
+    private void OnEnable()
+    { // her gece görüşü açıldığında barın uzunluğu 0.6 oranında olsun
+        if (zoomBar != null)
+        {
+            zoomBar.fillAmount = 0.6f;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
