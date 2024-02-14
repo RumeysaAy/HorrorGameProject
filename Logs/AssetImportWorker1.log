@@ -654,3 +654,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5741.469411 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_AlbedoTransparency.png
+  artifactKey: Guid(9cb10d177900d475baeeb1a8abe442e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_AlbedoTransparency.png using Guid(9cb10d177900d475baeeb1a8abe442e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c324546fc0947f18298ea672ea7fe8f') in 0.045157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_AlbedoTransparency.png
+  artifactKey: Guid(060f93982f57541558f8e0a2d723c3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_AlbedoTransparency.png using Guid(060f93982f57541558f8e0a2d723c3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ebf6da53755b535978b11f7d5bc5d9') in 0.005297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_MetallicSmoothness.png
+  artifactKey: Guid(46f6b70927d324bb4b6f5415e169b4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_MetallicSmoothness.png using Guid(46f6b70927d324bb4b6f5415e169b4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c8cd967a5fb9bde55476d7b16853dd') in 0.010822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_Normal.png
+  artifactKey: Guid(30b5bca25ae8e4f4ea4a05b4573eb39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Botle_Normal.png using Guid(30b5bca25ae8e4f4ea4a05b4573eb39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a20946e851f85fd5b73caa5a175d875') in 0.004956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_Normal.png
+  artifactKey: Guid(97fb3ada7f8434d90862eea7a50843ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_Normal.png using Guid(97fb3ada7f8434d90862eea7a50843ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c7ca9f1099bb260e1bcb4756978583') in 0.004466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_MetallicSmoothness.png
+  artifactKey: Guid(a407096b5383542d68f8a65e4c501b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle_Probka_MetallicSmoothness.png using Guid(a407096b5383542d68f8a65e4c501b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab85ad0306d7025c1773ac94d6e4806a') in 0.004328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 65.267615 seconds.
+  path: Assets/FPS/New Weapons/bottle/Materials/Probka.mat
+  artifactKey: Guid(ea0af313a1c104773be401126e7c7cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/Materials/Probka.mat using Guid(ea0af313a1c104773be401126e7c7cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e660febf3a84e89a0ea105196eb16c') in 0.135909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1

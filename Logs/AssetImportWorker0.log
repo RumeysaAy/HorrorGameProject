@@ -1086,3 +1086,179 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3377.362755 seconds.
+  path: Assets/FPS/New Weapons
+  artifactKey: Guid(59f3c1bc6e803429eb8413f470dbb955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons using Guid(59f3c1bc6e803429eb8413f470dbb955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80262ae4ff971192861f22f3281cb791') in 0.009480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 81.607988 seconds.
+  path: Assets/FPS/New Weapons/bottle
+  artifactKey: Guid(f4e1d0a9100d14a65b7d485fb1ff8b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle using Guid(f4e1d0a9100d14a65b7d485fb1ff8b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789cd7934c9f6bf4e1c273bbad191f5a') in 0.000406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.492260 seconds.
+  path: Assets/FPS/New Weapons/bottle/source
+  artifactKey: Guid(79cdee0159e354ae3a824318d38d806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source using Guid(79cdee0159e354ae3a824318d38d806e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f9ab9a5e25ac65c1e963b9358df190') in 0.000339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.707355 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle
+  artifactKey: Guid(e324ffbc237de4fda8db15142f1e2a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle using Guid(e324ffbc237de4fda8db15142f1e2a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5fad51b0b4c451c36e4e995eeab942') in 0.000333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.031617 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle.obj
+  artifactKey: Guid(31109c615c69342ee93b5f79b94176ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle.obj using Guid(31109c615c69342ee93b5f79b94176ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61291ff3a9342df31f908078980f47e') in 0.087401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 38.280952 seconds.
+  path: Assets/FPS/New Weapons/bottle/source/Botle/Botle.obj
+  artifactKey: Guid(31109c615c69342ee93b5f79b94176ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/source/Botle/Botle.obj using Guid(31109c615c69342ee93b5f79b94176ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93828104ea9eabbab619946d747159c3') in 0.015391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 26.938141 seconds.
+  path: Assets/FPS/New Weapons/bottle/Materials
+  artifactKey: Guid(0d14675620ea3439d8a4f3902df88c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/Materials using Guid(0d14675620ea3439d8a4f3902df88c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad2f590472d40b12128f60989ace974') in 0.000266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024213 seconds.
+  path: Assets/FPS/New Weapons/bottle/Materials/Botle.mat
+  artifactKey: Guid(94013b8a98f3241079eb9d56a135ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/bottle/Materials/Botle.mat using Guid(94013b8a98f3241079eb9d56a135ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3640a0c10bc8ffd9491ee2f0adb89c80') in 0.004949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.063349 seconds.
+  path: Assets/FPS/New Weapons/cleaver-butchers-best-friend
+  artifactKey: Guid(f460882b2e7814ff0958683a1d9182d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/cleaver-butchers-best-friend using Guid(f460882b2e7814ff0958683a1d9182d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5d3d4fab959635d7e448c9a76e6adb') in 0.000291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.009597 seconds.
+  path: Assets/FPS/New Weapons/cleaver-butchers-best-friend/source
+  artifactKey: Guid(082d56f4adb67409ba64d258bd4443ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/cleaver-butchers-best-friend/source using Guid(082d56f4adb67409ba64d258bd4443ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d5deca16299cb4c956607510ffbc50') in 0.000303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.090227 seconds.
+  path: Assets/FPS/New Weapons/cleaver-butchers-best-friend/source/cleaver_sketchfab.fbx
+  artifactKey: Guid(b6d449d2b29c04bb99062434fcd3454e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/cleaver-butchers-best-friend/source/cleaver_sketchfab.fbx using Guid(b6d449d2b29c04bb99062434fcd3454e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2665b3d90a5d3207e64301e5649e686') in 0.011831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 25.880738 seconds.
+  path: Assets/FPS/New Weapons/cleaver-butchers-best-friend/source/cleaver_sketchfab.fbx
+  artifactKey: Guid(b6d449d2b29c04bb99062434fcd3454e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/cleaver-butchers-best-friend/source/cleaver_sketchfab.fbx using Guid(b6d449d2b29c04bb99062434fcd3454e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10240ba9e60d2e97c84bad58a7513e8a') in 0.007126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 16.088551 seconds.
+  path: Assets/FPS/New Weapons/realistic-spray-paint-can
+  artifactKey: Guid(b1d1edc939d9340998923e1d1da9223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/realistic-spray-paint-can using Guid(b1d1edc939d9340998923e1d1da9223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8569eb25e6870ca1e1f434ea4de98044') in 0.000265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.648448 seconds.
+  path: Assets/FPS/New Weapons/realistic-spray-paint-can/source
+  artifactKey: Guid(afa58b18e05b64130ae4125b5c61e6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/realistic-spray-paint-can/source using Guid(afa58b18e05b64130ae4125b5c61e6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e654b447b663f628c4e0ae841f5a9e') in 0.000238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.008516 seconds.
+  path: Assets/FPS/New Weapons/realistic-spray-paint-can/source/SprayPaint1.fbx
+  artifactKey: Guid(3fd1c4e66e6e4432e91b557052e12c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/realistic-spray-paint-can/source/SprayPaint1.fbx using Guid(3fd1c4e66e6e4432e91b557052e12c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d315fc77be9635bbf281662d7a3a355') in 0.012709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 15.851583 seconds.
+  path: Assets/FPS/New Weapons/realistic-spray-paint-can/source/SprayPaint1.fbx
+  artifactKey: Guid(3fd1c4e66e6e4432e91b557052e12c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/realistic-spray-paint-can/source/SprayPaint1.fbx using Guid(3fd1c4e66e6e4432e91b557052e12c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56fdbcd8af86420b8d11d8371f93a06') in 0.009616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 16.310734 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4
+  artifactKey: Guid(cc6496acc649546ee91bbb717e36a1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4 using Guid(cc6496acc649546ee91bbb717e36a1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ca752c054d84475073499dabd158e8') in 0.000272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.847900 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4/source
+  artifactKey: Guid(ae151c99b20164a4f9c1fd818f379601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4/source using Guid(ae151c99b20164a4f9c1fd818f379601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745533edf95f4f13d65e4b53b7be5081') in 0.000327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.029881 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4/source/Survival Melee Weapon 4.fbx
+  artifactKey: Guid(22e3bdd4edda740d9966b65774e4903f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4/source/Survival Melee Weapon 4.fbx using Guid(22e3bdd4edda740d9966b65774e4903f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc63945d00c308218d4b93a689ca4ea') in 0.010247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 33.493435 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4/Materials
+  artifactKey: Guid(7bd7f343178b0426a8174e002d70c691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4/Materials using Guid(7bd7f343178b0426a8174e002d70c691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7424bad1f29168bae5ded7da214ea0') in 0.000341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.491577 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4/Materials/New Material.mat
+  artifactKey: Guid(bec95af4a0f3241848e32f239f54c759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4/Materials/New Material.mat using Guid(bec95af4a0f3241848e32f239f54c759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a4cfcc2ed13cdbf7ece1cd62a123c3') in 0.005019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.798198 seconds.
+  path: Assets/FPS/New Weapons/survival-melee-weapon-4/Materials/Bat.mat
+  artifactKey: Guid(bec95af4a0f3241848e32f239f54c759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/New Weapons/survival-melee-weapon-4/Materials/Bat.mat using Guid(bec95af4a0f3241848e32f239f54c759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245f2068b64be49be242d885cb5b135e') in 0.004561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
