@@ -12,7 +12,8 @@ public class WeaponManager : MonoBehaviour
         axe, // 3
         pistol, // 4
         shotgun, // 5
-        sprayCan // 6
+        sprayCan, // 6
+        bottle // 7
     }
 
 
@@ -92,6 +93,9 @@ public class WeaponManager : MonoBehaviour
             case weaponSelect.sprayCan:
                 transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
                 break;
+            case weaponSelect.bottle:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
         }
     }
 
@@ -110,6 +114,7 @@ HRR_Axe_01(balta) 3
 Pistol 4
 Shotgun 5
 sprayCan 6
+bottle 7
 
 WeaponID ikiden az olduğu sürece, yani sıfır veya bir olduğu sürece knife idle animasyon oynatılacak
 
@@ -120,4 +125,6 @@ Weapon ID'si 4'e ulaştığında pistol idle oynamasını istiyoruz
 5 olursa shotgun idle oynamasını istiyoruz.
 
 6 ise spray idle
+
+7 ise bottle idle
 */
