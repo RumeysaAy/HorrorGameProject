@@ -101,7 +101,9 @@ BaseballBat 2
 Pistol 3
 Shotgun 4
 
-WeaponID üçten az olduğu sürece, yani sıfır bir veya iki olduğu sürece knife idle animasyon oynatılacak
+WeaponID ikiden az olduğu sürece, yani sıfır veya bir olduğu sürece knife idle animasyon oynatılacak
+
+WeaponID = 2 ise bat idle
 
 Weapon ID'si üçe ulaştığında pistol idle oynamasını istiyoruz
 
