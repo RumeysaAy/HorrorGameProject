@@ -9,8 +9,9 @@ public class WeaponManager : MonoBehaviour
         knife, // 0
         cleaver, // 1
         bat, // 2
-        pistol, // 3
-        shotgun // 4
+        axe, // 3
+        pistol, // 4
+        shotgun // 5
     }
 
 
@@ -78,6 +79,9 @@ public class WeaponManager : MonoBehaviour
             case weaponSelect.bat:
                 transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
                 break;
+            case weaponSelect.axe:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
             case weaponSelect.pistol:
                 transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
                 break;
@@ -98,14 +102,15 @@ public class WeaponManager : MonoBehaviour
 Knife 0
 Cleaver 1
 BaseballBat 2
-Pistol 3
-Shotgun 4
+HRR_Axe_01(balta) 3
+Pistol 4
+Shotgun 5
 
 WeaponID ikiden az olduğu sürece, yani sıfır veya bir olduğu sürece knife idle animasyon oynatılacak
 
-WeaponID = 2 ise bat idle
+WeaponID > 1 ise bat idle (2 veya 3)
 
-Weapon ID'si üçe ulaştığında pistol idle oynamasını istiyoruz
+Weapon ID'si 4'e ulaştığında pistol idle oynamasını istiyoruz
 
-dört olursa shotgun idle oynamasını istiyoruz.
+5 olursa shotgun idle oynamasını istiyoruz.
 */
