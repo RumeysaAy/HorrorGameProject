@@ -59,7 +59,32 @@ public class WeaponManager : MonoBehaviour
         chosenWeapon = (weaponSelect)weaponID;
         anim.SetInteger("WeaponID", weaponID);
         anim.SetBool("weaponChanged", true); // sürekli olarak çağrılmasını engellemek ve animasyonu bitirmesini sağlamak için
+        Move();
         StartCoroutine(WeaponReset());
+    }
+
+    private void Move()
+    {
+        // shotgun seçildiğinde arms@knife Z konumu 0.46 olmalı.
+        // Default olarak 0.66 olmalı.
+        switch (chosenWeapon)
+        {
+            case weaponSelect.knife:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
+            case weaponSelect.cleaver:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
+            case weaponSelect.bat:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
+            case weaponSelect.pistol:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
+                break;
+            case weaponSelect.shotgun:
+                transform.localPosition = new Vector3(0.02f, -0.193f, 0.46f);
+                break;
+        }
     }
 
     IEnumerator WeaponReset()
