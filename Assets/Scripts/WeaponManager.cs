@@ -30,7 +30,23 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X)) // x'e tıklayarak silahları değiştirebiliriz
+        {
+            if (weaponID < weapons.Length - 1)
+            {
+                weaponID++;
+                ChangeWeapons();
+            }
+        }
 
+        if (Input.GetKeyDown(KeyCode.Z)) // z'ye tıklayarak silahları değiştirebiliriz
+        {
+            if (weaponID > 0)
+            {
+                weaponID--;
+                ChangeWeapons();
+            }
+        }
     }
 
     private void ChangeWeapons()
@@ -42,6 +58,14 @@ public class WeaponManager : MonoBehaviour
         weapons[weaponID].SetActive(true); // o anda seçili olan silahı açmak istiyoruz.
         chosenWeapon = (weaponSelect)weaponID;
         anim.SetInteger("WeaponID", weaponID);
+        anim.SetBool("weaponChanged", true); // sürekli olarak çağrılmasını engellemek ve animasyonu bitirmesini sağlamak için
+        StartCoroutine(WeaponReset());
+    }
+
+    IEnumerator WeaponReset()
+    {
+        yield return new WaitForSeconds(0.5f); // animasyonu bitirmesi için gereken zaman
+        anim.SetBool("weaponChanged", false);
     }
 }
 
