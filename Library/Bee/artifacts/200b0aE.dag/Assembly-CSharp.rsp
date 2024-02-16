@@ -361,6 +361,7 @@
 "Assets/Scripts/LookMode.cs"
 "Assets/Scripts/NightVisionScript.cs"
 "Assets/Scripts/UIScale.cs"
+"Assets/Scripts/WeaponManager.cs"
 -langversion:9.0
 
 /deterministic
