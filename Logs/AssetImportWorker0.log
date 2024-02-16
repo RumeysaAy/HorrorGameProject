@@ -3518,3 +3518,183 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 556.176578 seconds.
+  path: Assets/FPS/weapon sounds
+  artifactKey: Guid(53c5f568c607a482aac42cfe7b3a4616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/weapon sounds using Guid(53c5f568c607a482aac42cfe7b3a4616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d228c90dc5b756fcf59979a9f498ae9') in 0.001009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.087250 seconds.
+  path: Assets/FPS/weapon sounds/AxeSlash.wav
+  artifactKey: Guid(663e4003bc977420b93ffb613b62a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/weapon sounds/AxeSlash.wav using Guid(663e4003bc977420b93ffb613b62a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9aa1bac08e5eebb20947cce3ce4e66e') in 0.054462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 138.095278 seconds.
+  path: Assets/FPS/weapon sounds/AxeSlash.wav
+  artifactKey: Guid(663e4003bc977420b93ffb613b62a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/weapon sounds/AxeSlash.wav using Guid(663e4003bc977420b93ffb613b62a03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f06a39a90f71b959534ec1f13e9a5d') in 0.007068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 36.689485 seconds.
+  path: Assets/FPS/weapon sounds/knifeSlash.wav
+  artifactKey: Guid(19ea1e8b84668460996796c65a76d270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/weapon sounds/knifeSlash.wav using Guid(19ea1e8b84668460996796c65a76d270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e9d159be82cbce497d4d4148af8bdc') in 0.005676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 370.958808 seconds.
+  path: Assets/FPS/knife-animated/source/Arms.controller
+  artifactKey: Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/knife-animated/source/Arms.controller using Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80c38693003d299c2905ca1a517c154') in 0.033663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 1011.438773 seconds.
+  path: Assets/FPS/knife-animated/source/Arms.controller
+  artifactKey: Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FPS/knife-animated/source/Arms.controller using Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd807bb2e5a7e07a6967bccc9c1a1a738') in 0.023477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x170087000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.124 seconds
+Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.245 seconds
+Domain Reload Profiling: 369ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (14ms)
+		LoadAssemblies (34ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (245ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (138ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (19ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 842 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (2.0 MB). Loaded Objects now: 1398.
+Memory consumption went from 293.4 MB to 291.3 MB.
+Total: 2.201292 ms (FindLiveObjects: 0.063916 ms CreateObjectMapping: 0.014792 ms MarkObjects: 1.723417 ms  DeleteObjects: 0.398833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x170087000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.126 seconds
+Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.239 seconds
+Domain Reload Profiling: 365ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (15ms)
+		LoadAssemblies (33ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (239ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (144ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (19ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 842 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (2.0 MB). Loaded Objects now: 1398.
+Memory consumption went from 297.2 MB to 295.1 MB.
+Total: 2.329750 ms (FindLiveObjects: 0.061834 ms CreateObjectMapping: 0.013791 ms MarkObjects: 1.844625 ms  DeleteObjects: 0.409084 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 

@@ -21,12 +21,15 @@ public class WeaponManager : MonoBehaviour
     public GameObject[] weapons; // weapon prefab
     private int weaponID = 0;
     private Animator anim;
+    private AudioSource audioPlayer;
+    public AudioClip[] weaponSounds;
 
     // Start is called before the first frame update
     void Start()
     {
         weaponID = (int)chosenWeapon;
         anim = GetComponent<Animator>();
+        audioPlayer = GetComponent<AudioSource>();
         ChangeWeapons();
     }
 
@@ -49,6 +52,13 @@ public class WeaponManager : MonoBehaviour
                 weaponID--;
                 ChangeWeapons();
             }
+        }
+
+        if (Input.GetMouseButtonDown(0)) // sol fare tuşu
+        {
+            anim.SetTrigger("Attack"); // saldırı animasyonu
+            audioPlayer.clip = weaponSounds[weaponID]; // ses
+            audioPlayer.Play();
         }
     }
 
