@@ -8,11 +8,13 @@ public class LookMode : MonoBehaviour
     private PostProcessVolume vol;
     public PostProcessProfile standard; // normal görüş
     public PostProcessProfile nightVision; // gece görüşü
+    public PostProcessProfile inventory; // envanter profili
     public GameObject nightVisionOverlay; // gece görüş UI
     public GameObject flashLightOverlay; // el feneri UI
     private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
     private bool flashLightOn = false;
+    private bool inventoryOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +65,21 @@ public class LookMode : MonoBehaviour
                 flashLight.enabled = false; // el fenerinin ışığını kapat
                 flashLightOverlay.GetComponent<FlashLightScript>().StopDrain(); // el feneri pilin azalmasını engeller
                 flashLightOn = false;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.I)) // envanter
+        {
+            if (inventoryOn == false)
+            {
+                vol.profile = inventory;
+                inventoryOn = true;
+                // envanter açıkken gece görüşü ve el feneri iptal edilmeli
+            }
+            else if (inventoryOn == true)
+            {
+                vol.profile = standard;
+                inventoryOn = false;
             }
         }
 
