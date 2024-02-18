@@ -56,9 +56,12 @@ public class WeaponManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // sol fare tuşu
         {
-            anim.SetTrigger("Attack"); // saldırı animasyonu
-            audioPlayer.clip = weaponSounds[weaponID]; // ses
-            audioPlayer.Play();
+            if (SaveScript.inventoryOpen == false)
+            {
+                anim.SetTrigger("Attack"); // saldırı animasyonu
+                audioPlayer.clip = weaponSounds[weaponID]; // ses
+                audioPlayer.Play();
+            }
         }
     }
 

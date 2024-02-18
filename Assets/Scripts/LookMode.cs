@@ -8,9 +8,10 @@ public class LookMode : MonoBehaviour
     private PostProcessVolume vol;
     public PostProcessProfile standard; // normal görüş
     public PostProcessProfile nightVision; // gece görüşü
-    public PostProcessProfile inventory; // envanter profili
+    public PostProcessProfile inventory; // envanter profili/görüşü
     public GameObject nightVisionOverlay; // gece görüş UI
     public GameObject flashLightOverlay; // el feneri UI
+    public GameObject inventoryMenu; // UI (canva)
     private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
     private bool flashLightOn = false;
@@ -23,6 +24,7 @@ public class LookMode : MonoBehaviour
         flashLight.enabled = false;
         nightVisionOverlay.SetActive(false);
         flashLightOverlay.SetActive(false);
+        inventoryMenu.SetActive(false);
         vol.profile = standard;
     }
 
@@ -73,6 +75,7 @@ public class LookMode : MonoBehaviour
             {
                 // Envanter menümüzü etkin bir şekilde eklediğimizde, arkasındaki her şey bulanıklaşacak. (InventoryProfile)
                 vol.profile = inventory;
+                inventoryMenu.SetActive(true); // Envanter menüsü UI (Canva)
                 // envanter açıkken gece görüşü ve el feneri iptal edilmeli
 
                 if (flashLightOn == true)
@@ -94,6 +97,7 @@ public class LookMode : MonoBehaviour
             else if (SaveScript.inventoryOpen == true)
             {
                 vol.profile = standard;
+                inventoryMenu.SetActive(false); // UI
             }
         }
 
