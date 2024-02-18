@@ -14,7 +14,6 @@ public class LookMode : MonoBehaviour
     private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
     private bool flashLightOn = false;
-    private bool inventoryOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -70,16 +69,31 @@ public class LookMode : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.I)) // envanter
         {
-            if (inventoryOn == false)
+            if (SaveScript.inventoryOpen == false)
             {
+                // Envanter menümüzü etkin bir şekilde eklediğimizde, arkasındaki her şey bulanıklaşacak. (InventoryProfile)
                 vol.profile = inventory;
-                inventoryOn = true;
                 // envanter açıkken gece görüşü ve el feneri iptal edilmeli
+
+                if (flashLightOn == true)
+                {
+                    flashLightOverlay.SetActive(false);
+                    flashLight.enabled = false;
+                    flashLightOverlay.GetComponent<FlashLightScript>().StopDrain();
+                    flashLightOn = false;
+                }
+
+                if (nightVisionOn == true)
+                {
+                    nightVisionOverlay.SetActive(false);
+                    nightVisionOverlay.GetComponent<NightVisionScript>().StopDrain();
+                    this.gameObject.GetComponent<Camera>().fieldOfView = 60;
+                    nightVisionOn = false;
+                }
             }
-            else if (inventoryOn == true)
+            else if (SaveScript.inventoryOpen == true)
             {
                 vol.profile = standard;
-                inventoryOn = false;
             }
         }
 
