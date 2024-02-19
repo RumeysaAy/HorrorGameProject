@@ -11,6 +11,7 @@ public class WeaponInventory : MonoBehaviour
     public Text title;
     public string[] descriptions;
     public Text description;
+    public Button[] weaponButtons;
 
     private AudioSource audioPlayer;
     public AudioClip click, select;
@@ -26,10 +27,24 @@ public class WeaponInventory : MonoBehaviour
         description.text = descriptions[0];
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable() // envanter menüsü her açıldığında
     {
+        for (int i = 0; i < weaponButtons.Length; i++)
+        {
+            if (SaveScript.weaponsPickedUp[i] == false)
+            {
+                // silah toplanmamışsa buton kullanılamaz
+                weaponButtons[i].image.color = new Color(1, 1, 1, 0.06f); // alfa azaltılır, görünürlük azalır
+                weaponButtons[i].image.raycastTarget = false; // butona tıklanamaz
+            }
 
+            if (SaveScript.weaponsPickedUp[i] == true)
+            {
+                // silah toplanmışsa buton kullanılır hale getirilir
+                weaponButtons[i].image.color = new Color(1, 1, 1, 1f);
+                weaponButtons[i].image.raycastTarget = true; // butona tıklanabilir
+            }
+        }
     }
 
     public void ChooseWeapon(int weaponNumber)
