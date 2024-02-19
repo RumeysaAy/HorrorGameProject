@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 201
+    x: 296
     y: 66
     width: 1265
     height: 840
@@ -299,7 +299,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 494.5
+    x: 589.5
     y: 96
     width: 658
     height: 451.5
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 201
+    x: 296
     y: 96
     width: 292.5
     height: 451.5
@@ -413,10 +413,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 209.5}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 400dffff0cfbffff
+      m_ExpandedIDs: 8c6ffcff0c21feff5caffeff8cb5feffe67affff0cfbffff244b0000e670000028800000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1007,7 +1007,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 201
+    x: 296
     y: 568.5
     width: 952.5
     height: 296.5
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MyScenes/HorrorScene_Profiles
+    - Assets/UI graphics
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1040,16 +1040,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/MyScenes/HorrorScene_Profiles
+  - Assets/UI graphics
   m_LastFoldersGridSize: 57
   m_LastProjectPath: /Users/rumeysaay/UnityProjeleri/Horror Survival
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: f0ad0000
-    m_LastClickedID: 44528
-    m_ExpandedIDs: 0000000006ac00000cad000010ad000000ca9a3bffffff7f
+    m_SelectedIDs: 2aad0000
+    m_LastClickedID: 44330
+    m_ExpandedIDs: 0000000014ac00001ead00002aad00001af9000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006ac0000
+    m_ExpandedIDs: 0000000014ac0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1153,10 +1153,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 247
-    y: 569
-    width: 871.5
-    height: 297
+    x: 296
+    y: 568.5
+    width: 952.5
+    height: 296.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1257,7 +1257,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1154.5
+    x: 1249.5
     y: 96
     width: 310.5
     height: 769
@@ -1271,18 +1271,19 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
+  m_ObjectsLockedBeforeSerialization:
+  - {fileID: 0}
+  m_InstanceIDsLockedBeforeSerialization: 244b0000
   m_PreviewResizer:
     m_CachedPref: 276
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 227
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
-    m_IsLocked: 0
+    m_IsLocked: 1
   m_PreviewWindow: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:
