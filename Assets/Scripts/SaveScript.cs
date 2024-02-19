@@ -6,6 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class SaveScript : MonoBehaviour
 {
     public static bool inventoryOpen = false;
+    public static int weaponID = 0; // WeaponInventory.cs dosyasının erişmesi gerekiyor. UI'den silahı değiştirmek için gerekli
 
     // Start is called before the first frame update
     void Start()

@@ -14,6 +14,7 @@ public class WeaponInventory : MonoBehaviour
 
     private AudioSource audioPlayer;
     public AudioClip click, select;
+    private int chosenWeaponNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,14 @@ public class WeaponInventory : MonoBehaviour
         title.text = titles[weaponNumber];
         description.text = descriptions[weaponNumber];
         audioPlayer.clip = click;
+        audioPlayer.Play();
+        chosenWeaponNumber = weaponNumber;
+    }
+
+    public void AssignWeapon()
+    {
+        SaveScript.weaponID = chosenWeaponNumber;
+        audioPlayer.clip = select;
         audioPlayer.Play();
     }
 }

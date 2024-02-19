@@ -19,15 +19,16 @@ public class WeaponManager : MonoBehaviour
 
     public weaponSelect chosenWeapon;
     public GameObject[] weapons; // weapon prefab
-    private int weaponID = 0;
+    // private int weaponID = 0; // UI'den silahı değiştirmek için gerekli. SaveScript.cs dosyasından çekilir
     private Animator anim;
     private AudioSource audioPlayer;
     public AudioClip[] weaponSounds;
+    private int currentWeaponID;
 
     // Start is called before the first frame update
     void Start()
     {
-        weaponID = (int)chosenWeapon;
+        SaveScript.weaponID = (int)chosenWeapon;
         anim = GetComponent<Animator>();
         audioPlayer = GetComponent<AudioSource>();
         ChangeWeapons();
@@ -36,11 +37,12 @@ public class WeaponManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.X)) // x'e tıklayarak silahları değiştirebiliriz
         {
-            if (weaponID < weapons.Length - 1)
+            if (SaveScript.weaponID < weapons.Length - 1)
             {
-                weaponID++;
+                SaveScript.weaponID++;
                 ChangeWeapons();
             }
         }
@@ -52,6 +54,11 @@ public class WeaponManager : MonoBehaviour
                 weaponID--;
                 ChangeWeapons();
             }
+        }*/
+
+        if (SaveScript.weaponID != currentWeaponID)
+        {
+            ChangeWeapons();
         }
 
         if (Input.GetMouseButtonDown(0)) // sol fare tuşu
@@ -59,7 +66,7 @@ public class WeaponManager : MonoBehaviour
             if (SaveScript.inventoryOpen == false)
             {
                 anim.SetTrigger("Attack"); // saldırı animasyonu
-                audioPlayer.clip = weaponSounds[weaponID]; // ses
+                audioPlayer.clip = weaponSounds[SaveScript.weaponID]; // ses
                 audioPlayer.Play();
             }
         }
@@ -71,10 +78,12 @@ public class WeaponManager : MonoBehaviour
         {
             weapon.SetActive(false);
         }
-        weapons[weaponID].SetActive(true); // o anda seçili olan silahı açmak istiyoruz.
-        chosenWeapon = (weaponSelect)weaponID;
-        anim.SetInteger("WeaponID", weaponID);
+        weapons[SaveScript.weaponID].SetActive(true); // o anda seçili olan silahı açmak istiyoruz.
+        chosenWeapon = (weaponSelect)SaveScript.weaponID;
+        anim.SetInteger("WeaponID", SaveScript.weaponID);
         anim.SetBool("weaponChanged", true); // sürekli olarak çağrılmasını engellemek ve animasyonu bitirmesini sağlamak için
+        currentWeaponID = SaveScript.weaponID;
+
         Move();
         StartCoroutine(WeaponReset());
     }
