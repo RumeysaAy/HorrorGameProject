@@ -19,6 +19,7 @@ public class SaveScript : MonoBehaviour
 
         itemsPickedUp[0] = true;
         itemsPickedUp[1] = true;
+        itemsPickedUp[9] = true;
     }
 
     // Update is called once per frame
