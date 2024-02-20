@@ -17,6 +17,11 @@ public class WeaponInventory : MonoBehaviour
     public AudioClip click, select;
     private int chosenWeaponNumber;
 
+    // ögeleri birleştirmek için kullanılacak:
+    public GameObject useButton, combineButton;
+    public GameObject combinePanel, combineUseButton;
+    public Image[] combineItems;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +30,9 @@ public class WeaponInventory : MonoBehaviour
         bigIcon.sprite = bigIcons[0];
         title.text = titles[0];
         description.text = descriptions[0];
+
+        combinePanel.SetActive(false);
+        combineButton.SetActive(false);
     }
 
     private void OnEnable() // envanter menüsü her açıldığında
@@ -44,6 +52,12 @@ public class WeaponInventory : MonoBehaviour
                 weaponButtons[i].image.color = new Color(1, 1, 1, 1f);
                 weaponButtons[i].image.raycastTarget = true; // butona tıklanabilir
             }
+
+            if (chosenWeaponNumber < 6)
+            {
+                combinePanel.SetActive(false);
+                combineButton.SetActive(false);
+            }
         }
     }
 
@@ -55,6 +69,12 @@ public class WeaponInventory : MonoBehaviour
         audioPlayer.clip = click;
         audioPlayer.Play();
         chosenWeaponNumber = weaponNumber;
+
+        if (chosenWeaponNumber > 5) // 6(spray) ve 7(bottle)
+        {
+            combineButton.SetActive(true);
+        }
+
     }
 
     public void AssignWeapon()

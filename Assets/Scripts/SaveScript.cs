@@ -16,6 +16,8 @@ public class SaveScript : MonoBehaviour
     {
         weaponsPickedUp[0] = true; // 1. silah true yani 1. silaha sahibim (knife)
         weaponsPickedUp[1] = true;
+        weaponsPickedUp[6] = true;
+        weaponsPickedUp[7] = true;
 
         itemsPickedUp[0] = true;
         itemsPickedUp[1] = true;
