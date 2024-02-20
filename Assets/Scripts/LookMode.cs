@@ -34,38 +34,44 @@ public class LookMode : MonoBehaviour
         // eğer gece görüşü kapalıysa N'e basıldığında açılsın
         if (Input.GetKeyDown(KeyCode.N))
         {
-            if (nightVisionOn == false)
+            if (SaveScript.inventoryOpen == false)
             {
-                vol.profile = nightVision;
-                nightVisionOverlay.SetActive(true);
-                nightVisionOn = true;
-                NightVisionOff(); // Pilimizde güç yoksa gece görüşünün hiç açılmasını istemeyiz.
-            }
-            else if (nightVisionOn == true)
-            { // eğer gece görüşü açıksa N'e tıklandığında kapansın
-                vol.profile = standard;
-                nightVisionOverlay.SetActive(false);
-                nightVisionOverlay.GetComponent<NightVisionScript>().StopDrain(); // gece görüşü pilin azalmasını engeller
-                this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
-                nightVisionOn = false;
+                if (nightVisionOn == false)
+                {
+                    vol.profile = nightVision;
+                    nightVisionOverlay.SetActive(true);
+                    nightVisionOn = true;
+                    NightVisionOff(); // Pilimizde güç yoksa gece görüşünün hiç açılmasını istemeyiz.
+                }
+                else if (nightVisionOn == true)
+                { // eğer gece görüşü açıksa N'e tıklandığında kapansın
+                    vol.profile = standard;
+                    nightVisionOverlay.SetActive(false);
+                    nightVisionOverlay.GetComponent<NightVisionScript>().StopDrain(); // gece görüşü pilin azalmasını engeller
+                    this.gameObject.GetComponent<Camera>().fieldOfView = 60; // gece görüşünde yapılan yakınlaştırma gece görüşü kapatıldığında sıfırlansın
+                    nightVisionOn = false;
+                }
             }
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (flashLightOn == false)
+            if (SaveScript.inventoryOpen == false)
             {
-                flashLightOverlay.SetActive(true);
-                flashLight.enabled = true; // el fenerinin ışığını aç
-                flashLightOn = true;
-                FlashLightSwitchOff();
-            }
-            else if (flashLightOn == true)
-            {
-                flashLightOverlay.SetActive(false);
-                flashLight.enabled = false; // el fenerinin ışığını kapat
-                flashLightOverlay.GetComponent<FlashLightScript>().StopDrain(); // el feneri pilin azalmasını engeller
-                flashLightOn = false;
+                if (flashLightOn == false)
+                {
+                    flashLightOverlay.SetActive(true);
+                    flashLight.enabled = true; // el fenerinin ışığını aç
+                    flashLightOn = true;
+                    FlashLightSwitchOff();
+                }
+                else if (flashLightOn == true)
+                {
+                    flashLightOverlay.SetActive(false);
+                    flashLight.enabled = false; // el fenerinin ışığını kapat
+                    flashLightOverlay.GetComponent<FlashLightScript>().StopDrain(); // el feneri pilin azalmasını engeller
+                    flashLightOn = false;
+                }
             }
         }
 
