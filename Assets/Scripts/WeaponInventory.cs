@@ -20,7 +20,7 @@ public class WeaponInventory : MonoBehaviour
     // ögeleri birleştirmek için kullanılacak:
     public GameObject useButton, combineButton;
     public GameObject combinePanel, combineUseButton;
-    public Image[] combineItems;
+    public Image[] combineItems; // çakmak ve kumaş vardır
 
     // Start is called before the first frame update
     void Start()
@@ -52,12 +52,32 @@ public class WeaponInventory : MonoBehaviour
                 weaponButtons[i].image.color = new Color(1, 1, 1, 1f);
                 weaponButtons[i].image.raycastTarget = true; // butona tıklanabilir
             }
+        }
 
-            if (chosenWeaponNumber < 6)
-            {
-                combinePanel.SetActive(false);
-                combineButton.SetActive(false);
-            }
+        if (chosenWeaponNumber < 6)
+        {
+            combinePanel.SetActive(false);
+            combineButton.SetActive(false);
+        }
+
+        // hierarchy > Canvas > InventoryMenu > ItemsMenu > LighterButton >  OnClick() Lighter = 2
+        if (SaveScript.itemsPickedUp[2] == true ) // çakmak toplandı mı? sahip miyiz?
+        {
+            combineItems[0].color = new Color(1, 1, 1, 1); // eğer sahipsek çakmak resmi alfa = 1
+        }
+        else if (SaveScript.itemsPickedUp[2] == false) // çakmak toplanmadıysa
+        {
+            combineItems[0].color = new Color(1, 1, 1, 0.06f); // resim alfa = 0.06 soluklaşır
+        }
+
+        // hierarchy > Canvas > InventoryMenu > ItemsMenu > RagsButton >  OnClick() Rags = 3
+        if (SaveScript.itemsPickedUp[3] == true ) // // kumaş toplandı mı? sahip miyiz?
+        {
+            combineItems[1].color = new Color(1, 1, 1, 1); // eğer sahipsek kumaş resmi alfa = 1
+        }
+        else if (SaveScript.itemsPickedUp[3] == false) // kumaş toplanmadıysa
+        {
+            combineItems[1].color = new Color(1, 1, 1, 0.06f); // resim alfa = 0.06 soluklaşır
         }
     }
 
@@ -73,8 +93,54 @@ public class WeaponInventory : MonoBehaviour
         if (chosenWeaponNumber > 5) // 6(spray) ve 7(bottle)
         {
             combineButton.SetActive(true);
+            combinePanel.SetActive(false); // her silah seçtiğimizde combine panelin kapanması gerekiyor
         }
 
+        if (chosenWeaponNumber < 6)
+        {
+            combinePanel.SetActive(false); // her silah seçtiğimizde combine panelin kapanması gerekiyor
+            combineButton.SetActive(false);
+        }
+    }
+
+    public void CombineAction()
+    {
+        // bu fonksiyon CombineButton'a tıklandığında çalışacak (Inspector'de tanımlanmıştır)
+        combinePanel.SetActive(true); //combine bölümü açılır
+
+        // hierarchy > Canvas > InventoryMenu > WeaponMenu > SprayButton > OnClick() > spray = 6
+        if (chosenWeaponNumber == 6) // sprey seçildi mi?
+        {
+            // Spreyi sadece çakmak ile birleştirebildiğimiz için combine panelinde kumaşı görmemize gerek yok
+            // hierarchy > Canvas > InventoryMenu > WeaponMenu
+            combineItems[1].transform.gameObject.SetActive(false);
+
+            // sprey için sadece çakmağa ihtiyaç var
+            if (SaveScript.itemsPickedUp[2] == true)
+            {
+                combineUseButton.SetActive(true);
+            }
+            else if (SaveScript.itemsPickedUp[2] == false)
+            {
+                combineUseButton.SetActive(false);
+            }
+        }
+
+        // hierarchy > Canvas > InventoryMenu > WeaponMenu > BottleButton > OnClick() > bottle = 7
+        if (chosenWeaponNumber == 7) // şişe seçildi mi?
+        {
+            combineItems[1].transform.gameObject.SetActive(true); // kumaş şişe içi gerekli
+
+            // bottle(şişe) için çakmak ve kumaşa ihtiyaç var
+            if (SaveScript.itemsPickedUp[2] == true && SaveScript.itemsPickedUp[3] == true)
+            {
+                combineUseButton.SetActive(true);
+            }
+            else if (SaveScript.itemsPickedUp[2] == false || SaveScript.itemsPickedUp[3] == false)
+            {
+                combineUseButton.SetActive(false);
+            }
+        }
     }
 
     public void AssignWeapon()

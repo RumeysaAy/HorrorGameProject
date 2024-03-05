@@ -20,7 +20,8 @@ public class SaveScript : MonoBehaviour
         weaponsPickedUp[7] = true;
 
         itemsPickedUp[0] = true;
-        itemsPickedUp[1] = true;
+        itemsPickedUp[2] = true; // çakmak toplandı mı?
+        itemsPickedUp[3] = true; // kumaş toplandı mı?
         itemsPickedUp[9] = true;
     }
 
