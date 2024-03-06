@@ -3,7 +3,77 @@ guid: be0240bfde72f42baa77997529331a96
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_centerMat
+    second: {fileID: 2100000, guid: 955fffee6c0bc41bfb6418d20242023f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata1Mat
+    second: {fileID: 2100000, guid: d747851bf1efa49e89844681088ad01d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata2Mat
+    second: {fileID: 2100000, guid: 6ee16343f4e83458dbd6d9e10a7964a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata3Mat
+    second: {fileID: 2100000, guid: 863ef2455f7824ff394b07d5142a6e78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata4Mat
+    second: {fileID: 2100000, guid: 4a19fc67ca98445ae84ed8accb2b45ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata5Mat
+    second: {fileID: 2100000, guid: 52d00542c44aa4ce2b6ecb461eccea0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_dvercata6Mat
+    second: {fileID: 2100000, guid: d28404d84c75c45f1a7c5facb38142c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_livastinkaMat
+    second: {fileID: 2100000, guid: 5500f6319a966484d85aac8adbcbd618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_nuzMat
+    second: {fileID: 2100000, guid: 690bb2e275642414daeb01a51d4ca334, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_pravastinkaMat
+    second: {fileID: 2100000, guid: fdc31c53a3a5e47ad907e8e2ea6141f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_sereduna1Mat
+    second: {fileID: 2100000, guid: 381e6cb01439243ec88a2dbe277a65ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_sereduna2Mat
+    second: {fileID: 2100000, guid: 0b0c06eb652444922aa8596d18cd50fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_verhnyastinkaMat
+    second: {fileID: 2100000, guid: 167d0d1d0c8ac484ba9bba07c2f0d8e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: safa_pisla_coata_zadnyastinkaMat
+    second: {fileID: 2100000, guid: 63617fb26041647009ebb3adbb3eb0af, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

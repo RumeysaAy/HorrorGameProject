@@ -3,7 +3,22 @@ guid: f63c2f3452ab842058aa2d3a288a1634
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ammobox
+    second: {fileID: 2100000, guid: bfb3e40bef1b740dcbac0eeeb87e5510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_1
+    second: {fileID: 2100000, guid: 539a7c0d59e3b4c109f1454afed3187c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bullet2
+    second: {fileID: 2100000, guid: 156bfd07dd0c041a282d027d2295d078, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
