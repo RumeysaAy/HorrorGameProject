@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    // arms@knife > Weapons
     public enum weaponSelect
     {
         knife, // 0
@@ -13,7 +14,8 @@ public class WeaponManager : MonoBehaviour
         pistol, // 4
         shotgun, // 5
         sprayCan, // 6
-        bottle // 7
+        bottle, // 7
+        bottleWithCloth // 8
     }
 
 
