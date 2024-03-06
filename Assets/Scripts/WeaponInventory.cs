@@ -143,7 +143,27 @@ public class WeaponInventory : MonoBehaviour
         }
     }
 
-    public void AssignWeapon()
+    // combine panelindeki use butonuna tıklandığında bu fonksiyon çağrılacak
+    public void CombineAssignWeapon() // UseButtonCombine
+    {
+        if (chosenWeaponNumber == 6) // seçilen silah spray ise
+        {
+            SaveScript.weaponID = chosenWeaponNumber;
+        }
+
+        if (chosenWeaponNumber == 7) // seçilen silah bottle ise
+        {
+            chosenWeaponNumber +=1; // 8. indeksteki silah olan bottleWithCloth kullanılsın
+            SaveScript.weaponID = chosenWeaponNumber;
+            // kumaş ve çakmak alınmıştır ve bottle seçilmiştir
+            // birleştirirsek bottleWithCloth oluşturulur
+        }
+
+        audioPlayer.clip = select;
+        audioPlayer.Play();
+    }
+
+    public void AssignWeapon() // UseButton
     {
         SaveScript.weaponID = chosenWeaponNumber;
         audioPlayer.clip = select;
