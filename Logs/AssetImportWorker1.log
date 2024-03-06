@@ -656,3 +656,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23914.274497 seconds.
+  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Diffuse.jpg
+  artifactKey: Guid(de4d23d594b684fc0baf978828912a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Diffuse.jpg using Guid(de4d23d594b684fc0baf978828912a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3b4024a98c348206bedd5244f78c1e') in 0.061185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Preview.png
+  artifactKey: Guid(699bf77de916e4e1ba371f902b4112f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Preview.png using Guid(699bf77de916e4e1ba371f902b4112f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afd03b15cca0e6ddf1c632870999a89') in 0.005021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 594.166914 seconds.
+  path: Assets/Pickups/frosted-sheets/textures/Diffuse.jpeg
+  artifactKey: Guid(84d5b3852d7bb4b6dbd398affee082b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/frosted-sheets/textures/Diffuse.jpeg using Guid(84d5b3852d7bb4b6dbd398affee082b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded3f85444869a6156e2c30e427881f1') in 0.006536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Pickups/frosted-sheets/textures/internal_ground_ao_texture.jpeg
+  artifactKey: Guid(c5efe9498a6a44a9e887561b40ea1475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/frosted-sheets/textures/internal_ground_ao_texture.jpeg using Guid(c5efe9498a6a44a9e887561b40ea1475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c918de44bbc71497c180f2dce35aa74') in 0.003861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Pickups/frosted-sheets/textures/Roughness.jpeg
+  artifactKey: Guid(ad1cbb3eab1144a879725a134dcdebfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/frosted-sheets/textures/Roughness.jpeg using Guid(ad1cbb3eab1144a879725a134dcdebfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10874bb6ff8d4c8ad72ed85a53a6362d') in 0.006096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5892.620467 seconds.
+  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_AO.jpg
+  artifactKey: Guid(90c5de8730be14d9da2f286fe1a164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_AO.jpg using Guid(90c5de8730be14d9da2f286fe1a164d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046d2c25b63a1cce0b163fd56c46cc6c') in 0.015374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_metallic.jpg
+  artifactKey: Guid(c4547a2e3ca0241d79d5d4fc11412a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_metallic.jpg using Guid(c4547a2e3ca0241d79d5d4fc11412a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235f5489acdcd0b26ba1a86bd07d0dae') in 0.005003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
