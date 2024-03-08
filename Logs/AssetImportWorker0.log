@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50622
+49343
 Successfully changed project path to: /Users/rumeysaay/UnityProjeleri/Horror Survival
 /Users/rumeysaay/UnityProjeleri/Horror Survival
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +56,12 @@ Successfully changed project path to: /Users/rumeysaay/UnityProjeleri/Horror Sur
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8052005952] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 955830478 [EditorId] 955830478 [Version] 1048832 [Id] OSXEditor(0,Rumeysas-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7977049152] Host "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 3655863806 [EditorId] 3655863806 [Version] 1048832 [Id] OSXEditor(0,Rumeysas-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8052005952] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 955830478 [EditorId] 955830478 [Version] 1048832 [Id] OSXEditor(0,Rumeysas-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7977049152] Host "[IP] 192.168.1.100 [Port] 0 [Flags] 2 [Guid] 3655863806 [EditorId] 3655863806 [Version] 1048832 [Id] OSXEditor(0,Rumeysas-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
-Refreshing native plugins compatible for Editor in 0.14 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,27 +76,27 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56253
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56474
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001956 seconds.
-- Loaded All Assemblies, in  0.205 seconds
+Registered in 0.005082 seconds.
+- Loaded All Assemblies, in  0.237 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 70 ms
+Android Extension - Scanning For ADB Devices 71 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.311 seconds
-Domain Reload Profiling: 516ms
-	BeginReloadAssembly (45ms)
+- Finished resetting the current domain, in  0.321 seconds
+Domain Reload Profiling: 557ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -104,26 +104,26 @@ Domain Reload Profiling: 516ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (98ms)
-		LoadAssemblies (45ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (102ms)
+		LoadAssemblies (71ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (96ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (99ms)
+				TypeCache.ScanAssembly (91ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (311ms)
+	FinalizeReload (321ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (274ms)
+		SetupLoadedEditorAssemblies (284ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (188ms)
+			InitializePlatformSupportModulesInManaged (201ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (55ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			ProcessInitializeOnLoadAttributes (53ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -131,526 +131,56 @@ Domain Reload Profiling: 516ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.149 seconds
-Refreshing native plugins compatible for Editor in 0.10 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.233 seconds
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.259 seconds
-Domain Reload Profiling: 409ms
-	BeginReloadAssembly (74ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (12ms)
-	LoadAllAssembliesAndSetupDomain (32ms)
-		LoadAssemblies (39ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (28ms)
-			TypeCache.Refresh (23ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (260ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (162ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (20ms)
-			ProcessInitializeOnLoadAttributes (103ms)
-			ProcessInitializeOnLoadMethodAttributes (12ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.10 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 913 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 1399.
-Memory consumption went from 130.2 MB to 128.1 MB.
-Total: 2.373792 ms (FindLiveObjects: 0.058958 ms CreateObjectMapping: 0.013125 ms MarkObjects: 1.889959 ms  DeleteObjects: 0.411292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 14596.507528 seconds.
-  path: Assets/FPS/knife-animated/source/Arms.controller
-  artifactKey: Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FPS/knife-animated/source/Arms.controller using Guid(440d91f20173c401cba1ff4e2d79fb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6746e7810b892cbae8ee4b905d21e5a1') in 0.034544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 32
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.121 seconds
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.232 seconds
-Domain Reload Profiling: 354ms
-	BeginReloadAssembly (71ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (11ms)
-	LoadAllAssembliesAndSetupDomain (9ms)
-		LoadAssemblies (35ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (232ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (137ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (18ms)
-			ProcessInitializeOnLoadAttributes (85ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 118.6 MB to 116.6 MB.
-Total: 2.227375 ms (FindLiveObjects: 0.053875 ms CreateObjectMapping: 0.013209 ms MarkObjects: 1.836250 ms  DeleteObjects: 0.323417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.129 seconds
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.247 seconds
-Domain Reload Profiling: 377ms
-	BeginReloadAssembly (76ms)
+- Finished resetting the current domain, in  0.251 seconds
+Domain Reload Profiling: 484ms
+	BeginReloadAssembly (77ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (17ms)
 	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (11ms)
-	LoadAllAssembliesAndSetupDomain (11ms)
-		LoadAssemblies (39ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (247ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (151ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (20ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 122.0 MB to 119.9 MB.
-Total: 2.577375 ms (FindLiveObjects: 0.057083 ms CreateObjectMapping: 0.014583 ms MarkObjects: 2.125375 ms  DeleteObjects: 0.379625 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.119 seconds
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.246 seconds
-Domain Reload Profiling: 366ms
-	BeginReloadAssembly (68ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (13ms)
-		LoadAssemblies (32ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (110ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (16ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (247ms)
+	FinalizeReload (251ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (154ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (99ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 125.3 MB to 123.2 MB.
-Total: 2.268334 ms (FindLiveObjects: 0.053750 ms CreateObjectMapping: 0.013250 ms MarkObjects: 1.832250 ms  DeleteObjects: 0.368583 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.120 seconds
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.288 seconds
-Domain Reload Profiling: 409ms
-	BeginReloadAssembly (72ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (10ms)
-		LoadAssemblies (34ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (288ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (174ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (46ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.11 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 128.6 MB to 126.5 MB.
-Total: 2.545167 ms (FindLiveObjects: 0.062917 ms CreateObjectMapping: 0.014709 ms MarkObjects: 1.992542 ms  DeleteObjects: 0.474500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.124 seconds
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.255 seconds
-Domain Reload Profiling: 379ms
-	BeginReloadAssembly (74ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (10ms)
-		LoadAssemblies (37ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (255ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (150ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 131.9 MB to 129.8 MB.
-Total: 2.412500 ms (FindLiveObjects: 0.056792 ms CreateObjectMapping: 0.015292 ms MarkObjects: 1.905625 ms  DeleteObjects: 0.434041 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.118 seconds
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.245 seconds
-Domain Reload Profiling: 364ms
-	BeginReloadAssembly (70ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (9ms)
-		LoadAssemblies (34ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (246ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (148ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.1 MB). Loaded Objects now: 1400.
-Memory consumption went from 135.3 MB to 133.2 MB.
-Total: 2.302917 ms (FindLiveObjects: 0.052833 ms CreateObjectMapping: 0.013667 ms MarkObjects: 1.849166 ms  DeleteObjects: 0.386541 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x299e13000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.114 seconds
-Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.235 seconds
-Domain Reload Profiling: 350ms
-	BeginReloadAssembly (67ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (9ms)
-		LoadAssemblies (32ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (235ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (146ms)
+		SetupLoadedEditorAssemblies (156ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (91ms)
+			BeforeProcessingInitializeOnLoad (20ms)
+			ProcessInitializeOnLoadAttributes (102ms)
 			ProcessInitializeOnLoadMethodAttributes (10ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.14 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (2.0 MB). Loaded Objects now: 1400.
-Memory consumption went from 138.5 MB to 136.5 MB.
-Total: 2.250500 ms (FindLiveObjects: 0.054166 ms CreateObjectMapping: 0.013542 ms MarkObjects: 1.784667 ms  DeleteObjects: 0.397542 ms)
+Unloading 919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (2.1 MB). Loaded Objects now: 1404.
+Memory consumption went from 131.3 MB to 129.2 MB.
+Total: 2.589083 ms (FindLiveObjects: 0.051375 ms CreateObjectMapping: 0.013625 ms MarkObjects: 2.080791 ms  DeleteObjects: 0.442792 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -666,1065 +196,177 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5965.979504 seconds.
-  path: Assets/Pickups
-  artifactKey: Guid(ed9777d9102914900aa0a6d591ddd52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups using Guid(ed9777d9102914900aa0a6d591ddd52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5525280c76bb3960e7e5c7b3870c77b6') in 0.010056 seconds
+  Time since last request: 689.453249 seconds.
+  path: Assets/AutoLOD
+  artifactKey: Guid(1aa133a8c59a4914fbea022a26b1c8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD using Guid(1aa133a8c59a4914fbea022a26b1c8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5acb039fa87233983b170f56f07cca03') in 0.001023 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2997.111180 seconds.
-  path: Assets/Pickups/frosted-sheets
-  artifactKey: Guid(124108d9f8d2a4437a4f9df685d63553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets using Guid(124108d9f8d2a4437a4f9df685d63553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a9d82cae8860bd5b29abb75790a8bb') in 0.003897 seconds
+  Time since last request: 25.626679 seconds.
+  path: Assets/AutoLOD/Generated
+  artifactKey: Guid(f3736392b736fdf4dad0c828c3b34655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated using Guid(f3736392b736fdf4dad0c828c3b34655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8369a2d77c097e19695b3df907f75ce2') in 0.000474 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.868122 seconds.
-  path: Assets/Pickups/frosted-sheets/source
-  artifactKey: Guid(6d255666346ae46b6ba1fa388c57850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source using Guid(6d255666346ae46b6ba1fa388c57850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53084c926d224a71d241872a7a601d0c') in 0.001012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.108300 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets.zip
-  artifactKey: Guid(83baf85d81ddd4a46956d061275431de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets.zip using Guid(83baf85d81ddd4a46956d061275431de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5061a054bf4df54f3243300ea16565c3') in 0.023669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 352.554036 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets
-  artifactKey: Guid(e4916af58ec39476caae3b1ee7f76d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets using Guid(e4916af58ec39476caae3b1ee7f76d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2cad9137b4ab0e916e61ade17b2138') in 0.000365 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.038921 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/AO.jpg
-  artifactKey: Guid(5ee97dc083d0d482980a94d0589b9d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/AO.jpg using Guid(5ee97dc083d0d482980a94d0589b9d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826117891078ffc8564e6e6d49f33acc') in 0.053168 seconds
+  Time since last request: 0.108025 seconds.
+  path: Assets/AutoLOD/Generated/Human_LOD1.asset
+  artifactKey: Guid(ee509618d0307324dbf569d47d742edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Human_LOD1.asset using Guid(ee509618d0307324dbf569d47d742edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac93c5fd5956d9e7aa2fd9a14b273d20') in 0.202271 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Normal.jpg
-  artifactKey: Guid(e566158f082834162955fb1e37b77009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Normal.jpg using Guid(e566158f082834162955fb1e37b77009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2fc80f5974065dea253c6cecd7aeb3') in 0.006411 seconds
+  Time since last request: 0.000049 seconds.
+  path: Assets/AutoLOD/Generated/Human_LOD4.asset
+  artifactKey: Guid(b444f648f68c76b49bdbbc9da7e4641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Human_LOD4.asset using Guid(b444f648f68c76b49bdbbc9da7e4641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5af663387279a8e6e29c11f4fd5aab2') in 0.005438 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Roughness.jpg
-  artifactKey: Guid(b7e0ba76625cb46b7a13d18c261cff0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Roughness.jpg using Guid(b7e0ba76625cb46b7a13d18c261cff0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ddbdd7adb9adc9d3fb2abf04679592') in 0.006193 seconds
+  Time since last request: 0.000114 seconds.
+  path: Assets/AutoLOD/Generated/Human_LOD3.asset
+  artifactKey: Guid(a3fed89351f7e654499e5b013aeef598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Human_LOD3.asset using Guid(a3fed89351f7e654499e5b013aeef598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14037b4c0caa661f79cb31789ce7e18d') in 0.006904 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj
-  artifactKey: Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj using Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f198f167a136f0426605d10ac660c3cc') in 0.081413 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 510.149106 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj
-  artifactKey: Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj using Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8c96d724ed27ce57617b6e24165a4b') in 0.013518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 5.626215 seconds.
-  path: Assets/Pickups/frosted-sheets/source/None.mat
-  artifactKey: Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/None.mat using Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967b50b90bc03eb51be511c878bf0477') in 0.009189 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 78.255214 seconds.
-  path: Assets/Pickups/frosted-sheets/textures
-  artifactKey: Guid(b48cb3179122b441da62eba3d5339815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/textures using Guid(b48cb3179122b441da62eba3d5339815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ad82d472188d89babde3a5f8821634') in 0.000702 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.024918 seconds.
-  path: Assets/Pickups/frosted-sheets/textures/AO.jpeg
-  artifactKey: Guid(076e53eaddd394787bb7182807141324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/textures/AO.jpeg using Guid(076e53eaddd394787bb7182807141324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ae9e2eabbbe62bb3d53c693b811dc4') in 0.005905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Pickups/frosted-sheets/textures/Normal.jpeg
-  artifactKey: Guid(932c4dc499e314f218af45df6f738682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/textures/Normal.jpeg using Guid(932c4dc499e314f218af45df6f738682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb92484e75f7b74f27947d58e36a6cb') in 0.004806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 87.840591 seconds.
-  path: Assets/Pickups/frosted-sheets/textures/Normal.jpeg
-  artifactKey: Guid(932c4dc499e314f218af45df6f738682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/textures/Normal.jpeg using Guid(932c4dc499e314f218af45df6f738682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eaaefb4d3cf2b16bcb151dc9b71fe3a') in 0.010334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 5402.183409 seconds.
-  path: Assets/Pickups/frosted-sheets/source/None.mat
-  artifactKey: Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/None.mat using Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ceea5bdb1431ea4a28339911eb86b4') in 0.128496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 14.892818 seconds.
-  path: Assets/Pickups/frosted-sheets/source/ClothsMat.mat
-  artifactKey: Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/ClothsMat.mat using Guid(24cabaeffe7a840688bf38031f2114db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809bf18b311df19a86a38729101718fb') in 0.010593 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 11.598988 seconds.
-  path: Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj
-  artifactKey: Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/frosted-sheets/source/Frosted Sheets/Sheets.obj using Guid(f193ac630b98948abafff6563ac825c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace8b24b93c9ff3df3fca0b01f4021eb') in 0.025395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 61.904010 seconds.
-  path: Assets/Pickups/Prefabs
-  artifactKey: Guid(3afe98f8770734420a132c9a0491e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs using Guid(3afe98f8770734420a132c9a0491e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd312fa9cab4904c63487e8988824cfff') in 0.000619 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 26.967511 seconds.
-  path: Assets/Pickups/Prefabs/Cloths.prefab
-  artifactKey: Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Cloths.prefab using Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b6cf9829920afb399995d0d59ffabb') in 0.014507 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 123.007974 seconds.
-  path: Assets/Pickups/jerrycan
-  artifactKey: Guid(72ebdee5533e445a99ef7a7c35d9caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan using Guid(72ebdee5533e445a99ef7a7c35d9caf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c67049fbe8a85712d937a380d2fc564') in 0.000711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.184405 seconds.
-  path: Assets/Pickups/jerrycan/source
-  artifactKey: Guid(804e996fa7238439f8e42f168c5c8bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/source using Guid(804e996fa7238439f8e42f168c5c8bf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a69498c8877612b3bef0e2559bec731') in 0.000630 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.096532 seconds.
-  path: Assets/Pickups/jerrycan/source/jerrycan.fbx
-  artifactKey: Guid(447c22687f19d4c63b1cd9eed920a2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/source/jerrycan.fbx using Guid(447c22687f19d4c63b1cd9eed920a2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2a6f779888f618bc6ab3f0fe207b3f') in 0.009004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 45.796958 seconds.
-  path: Assets/Pickups/jerrycan/source/New Material.mat
-  artifactKey: Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/source/New Material.mat using Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9e470d32142ba92337183de55bc911') in 0.005033 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 46.923002 seconds.
-  path: Assets/Pickups/jerrycan/source/Jerry Can Mat.mat
-  artifactKey: Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/source/Jerry Can Mat.mat using Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e066fb311e79fe4e5917c991e175636') in 0.004815 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 69.999415 seconds.
-  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_albedo.jpg
-  artifactKey: Guid(e19f76bf0b12a4cb591746269c992e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_albedo.jpg using Guid(e19f76bf0b12a4cb591746269c992e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b199384dd141b555df158eede822373') in 0.006638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_roughness.jpg
-  artifactKey: Guid(cb12ea94a42b7415d829559fc3ea4711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_roughness.jpg using Guid(cb12ea94a42b7415d829559fc3ea4711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f43bef830e85fbaf376ef8184fb342') in 0.005931 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_normal.jpg
-  artifactKey: Guid(84ca7f98d3d93491a97bd29a655a2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_normal.jpg using Guid(84ca7f98d3d93491a97bd29a655a2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8754a2664d9ffd56d2de746d05bbfabb') in 0.005918 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.198670 seconds.
-  path: Assets/Pickups/jerrycan/textures/DefaultMaterial_normal.jpg
-  artifactKey: Guid(84ca7f98d3d93491a97bd29a655a2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/textures/DefaultMaterial_normal.jpg using Guid(84ca7f98d3d93491a97bd29a655a2e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c81205527496425eb9b6a39b3a4704') in 0.004902 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 392.211348 seconds.
-  path: Assets/Pickups/Prefabs/jerrycan.prefab
-  artifactKey: Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/jerrycan.prefab using Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9e2d6616dfe9657d141e3713527e99') in 0.150526 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 182.870153 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors
-  artifactKey: Guid(dfcc0801c58774b29a43154c6cae51b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors using Guid(dfcc0801c58774b29a43154c6cae51b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3f82c604a13a020b00c05f2e81f10e') in 0.000701 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.732721 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source
-  artifactKey: Guid(1b18f23ba10814526b4b72b51dc57a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source using Guid(1b18f23ba10814526b4b72b51dc57a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a711c234e81863af773955d334784f') in 0.000602 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.070269 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx
-  artifactKey: Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx using Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a711c75102e452f8d9a6dc93990ebc9') in 0.182108 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 158.615365 seconds.
-  path: Assets/Pickups/jerrycan/textures
-  artifactKey: Guid(7e92fb839be2b4ebdaacce55ad39f638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/textures using Guid(7e92fb839be2b4ebdaacce55ad39f638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e959cc91fe03f3fd10c0afb723a10583') in 0.000374 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.323260 seconds.
-  path: Assets/Pickups/jerrycan/source/Jerry Can Mat.mat
-  artifactKey: Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/jerrycan/source/Jerry Can Mat.mat using Guid(63bf4e737c23940289a0dda033b703d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e015a14002fdf342ece3284f0423236') in 0.012945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 244.284308 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx
-  artifactKey: Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx using Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1d64e2ed9cb08c1b9ac57c949da4c1') in 0.020900 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.018450 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.mat
-  artifactKey: Guid(c19625e968ac64e0fafa80aa11b3636a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.mat using Guid(c19625e968ac64e0fafa80aa11b3636a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dd6a80b8d810a1e1513aa72c178ae0') in 0.003408 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 13.991499 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/textures
-  artifactKey: Guid(f5948ab12f96743d49580ea7cae6d485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/textures using Guid(f5948ab12f96743d49580ea7cae6d485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9320a0954706e607adeeca922e3bbb54') in 0.000246 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.064988 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Base_color.png
-  artifactKey: Guid(4abaaf4651c374a9ea6e02db2964dec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Base_color.png using Guid(4abaaf4651c374a9ea6e02db2964dec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687323c1d8f12055ee94d9e0f77e5d51') in 0.005936 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Roughness.png
-  artifactKey: Guid(bd1a9f3da19044f64a32d6fc26b1ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Roughness.png using Guid(bd1a9f3da19044f64a32d6fc26b1ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee47cacafc59b4ce6b527a46e59f7d1') in 0.005289 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Mixed_AO.png
-  artifactKey: Guid(0c676516158f045ecbd455c3380b7f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Mixed_AO.png using Guid(0c676516158f045ecbd455c3380b7f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f4326df5dfa13f8bd0d7a96428c48d') in 0.006137 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 55.075445 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Normal_OpenGL.jpg
-  artifactKey: Guid(99a52a56e8aa44fe3b171baaa4adbdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/textures/Default_Normal_OpenGL.jpg using Guid(99a52a56e8aa44fe3b171baaa4adbdbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51eab14d7cecb3c0217a0630be9a910f') in 0.005958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 108.666165 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx
-  artifactKey: Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx using Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4719f9d27fe94248ea1b24446dbc3680') in 0.183182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 10.964581 seconds.
-  path: Assets/Pickups/Prefabs/Shelf.prefab
-  artifactKey: Guid(90001f3eb3f7f46bbbd63049a92c8b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Shelf.prefab using Guid(90001f3eb3f7f46bbbd63049a92c8b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e24f815d939a76e67a1ad5e44e3f5af') in 0.011057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 28.558406 seconds.
-  path: Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx
-  artifactKey: Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/wooden-cabinet-with-doors/source/Shelf.fbx using Guid(c5c0cb8e5e1b44c7a88527bd29a01149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117dc4f664822372f57e23f5dafdba5e') in 0.136505 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 89.130885 seconds.
-  path: Assets/Pickups/key
-  artifactKey: Guid(17f0177735e80493cb1fc8129084d0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key using Guid(17f0177735e80493cb1fc8129084d0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0fa46aa269f682126017446aa6b9f4') in 0.000733 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.570459 seconds.
-  path: Assets/Pickups/key/source
-  artifactKey: Guid(c4f0f9a1467e545afa8aa3d98269e0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source using Guid(c4f0f9a1467e545afa8aa3d98269e0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e1ac0360870a4bad7fda99832b38ab') in 0.000672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.062221 seconds.
-  path: Assets/Pickups/key/source/Key.obj
-  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23522aecf1b810502afc12c079dbbcf5') in 0.018294 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 7.801230 seconds.
-  path: Assets/Pickups/key/source/Key.obj
-  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61966deb779712dbb0f363f17d3377d') in 0.009153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.034651 seconds.
-  path: Assets/Pickups/key/source/pCylinder6Mat.mat
-  artifactKey: Guid(a04cfc43e54e14584920f2fd798cae43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/pCylinder6Mat.mat using Guid(a04cfc43e54e14584920f2fd798cae43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dca6b6ef5ab524883da459b57ca7de') in 0.003952 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 15.582787 seconds.
-  path: Assets/Pickups/key/textures/KEY_BUMP.png
-  artifactKey: Guid(49cc6c3c428434d648410dce98ee5381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/textures/KEY_BUMP.png using Guid(49cc6c3c428434d648410dce98ee5381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfd875af604be30f6638801c046fdc1') in 0.008230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Pickups/key/textures/KEY_SPEC.png
-  artifactKey: Guid(4e991cf4ade7643d382b232afee9208a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/textures/KEY_SPEC.png using Guid(4e991cf4ade7643d382b232afee9208a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250ca30dd41dc1c1df76f7a86665e8b4') in 0.005047 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 98.304878 seconds.
-  path: Assets/Pickups/key4/source/Key3.fbx
-  artifactKey: Guid(a6b178cb39fff4f66ac7bff85f3135f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/source/Key3.fbx using Guid(a6b178cb39fff4f66ac7bff85f3135f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2135f750ff1cac39f39013100cee56f') in 0.020846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 17.480913 seconds.
-  path: Assets/Pickups/key4/source/Key3.fbx
-  artifactKey: Guid(a6b178cb39fff4f66ac7bff85f3135f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/source/Key3.fbx using Guid(a6b178cb39fff4f66ac7bff85f3135f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a95655acc46f90fd6865f496411700') in 0.013089 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.026511 seconds.
-  path: Assets/Pickups/key4/source/default.mat
-  artifactKey: Guid(a612eec77186b448ab3130f4c63e4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/source/default.mat using Guid(a612eec77186b448ab3130f4c63e4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01bb78c4eb6b18e2d025ed9c43c08553') in 0.003579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 9.983568 seconds.
-  path: Assets/Pickups/key4/textures
-  artifactKey: Guid(dc353f2b0136149f88717ca4732cf062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/textures using Guid(dc353f2b0136149f88717ca4732cf062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf8b39aff279adeb73e7805f158182e') in 0.000269 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.658030 seconds.
-  path: Assets/Pickups/key4/source
-  artifactKey: Guid(5134f19b1894f46ec89fb54142887da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/source using Guid(5134f19b1894f46ec89fb54142887da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce3768c53842d6de26fa76a1b2e9a80') in 0.000539 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 8.519197 seconds.
-  path: Assets/Pickups/key4/textures/Key3_default_BaseColor.png
-  artifactKey: Guid(f104a7f6f5f974b11b06ec9dc741794a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/textures/Key3_default_BaseColor.png using Guid(f104a7f6f5f974b11b06ec9dc741794a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521d4f4e16edcf16f2feb1740ec101e1') in 0.005961 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Pickups/key4/textures/Key3_default_Normal.png
-  artifactKey: Guid(f0be156cba70c40c89b8191499bb53bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/textures/Key3_default_Normal.png using Guid(f0be156cba70c40c89b8191499bb53bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd551307b511a378ba787d6a008964fff') in 0.005474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 10.378415 seconds.
-  path: Assets/Pickups/key4/textures/Key3_default_Normal.png
-  artifactKey: Guid(f0be156cba70c40c89b8191499bb53bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/textures/Key3_default_Normal.png using Guid(f0be156cba70c40c89b8191499bb53bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40e4e4acd69b86dfd5b61bf363adceb') in 0.005637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 78.407517 seconds.
-  path: Assets/Pickups/key4/source/default.mat
-  artifactKey: Guid(a612eec77186b448ab3130f4c63e4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4/source/default.mat using Guid(a612eec77186b448ab3130f4c63e4c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7080101eb5e950807936f980054c4ae5') in 0.008913 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 66.811963 seconds.
-  path: Assets/Pickups/Prefabs/Shelf.prefab
-  artifactKey: Guid(90001f3eb3f7f46bbbd63049a92c8b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Shelf.prefab using Guid(90001f3eb3f7f46bbbd63049a92c8b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88668080fb3ae200276895a6a909310b') in 0.015391 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 5.161187 seconds.
-  path: Assets/Pickups/Prefabs/Key3.prefab
-  artifactKey: Guid(a40b86f8237e34a3d8eed0438c839528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Key3.prefab using Guid(a40b86f8237e34a3d8eed0438c839528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42e4db7f7e27c496d056380b84f4d52') in 0.009333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 67.955516 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Laboratory_cabinet_NakedSingularity.fbx
-  artifactKey: Guid(95a6c447cb9704d9fbde49fd66a6235d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Laboratory_cabinet_NakedSingularity.fbx using Guid(95a6c447cb9704d9fbde49fd66a6235d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25879736c57c27dc87645ebc36ce9d3') in 0.359628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 6.229364 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures
-  artifactKey: Guid(304df5ada7e9f438b97c2e58e48daae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures using Guid(304df5ada7e9f438b97c2e58e48daae6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f2d03bfce0c48c72dbbf8db89f9bb6') in 0.000877 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.086447 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_glass_AmbientOcclusion.jpg
-  artifactKey: Guid(d9755f4ee4adb4798abe14605ea3f365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_glass_AmbientOcclusion.jpg using Guid(d9755f4ee4adb4798abe14605ea3f365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323ab264c77935550f9218982a6f9039') in 0.006367 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Normal.jpg
-  artifactKey: Guid(82620af8206874797b9ec128e3029c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Normal.jpg using Guid(82620af8206874797b9ec128e3029c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493efecd2c89c00afa6e3c7765229c81') in 0.007051 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Metalic.jpg
-  artifactKey: Guid(4bb65fe275c6e4f16b866344ff615f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Metalic.jpg using Guid(4bb65fe275c6e4f16b866344ff615f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9aeebc22a9889001a0f56972076d972') in 0.004834 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_glass_Roughness.jpg
-  artifactKey: Guid(11e46b2f55fca47f38f68954a6268ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_glass_Roughness.jpg using Guid(11e46b2f55fca47f38f68954a6268ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e603daa55747090f788d5f34d9af77a2') in 0.005419 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Diffuse.jpg
-  artifactKey: Guid(e0c554b20f0f94239a9c57582094b844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Textures/T_Laboratory_cabinet_metal_Diffuse.jpg using Guid(e0c554b20f0f94239a9c57582094b844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1ca7cf987b5c2c10ee94eaa90301fc') in 0.004460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 944.780602 seconds.
-  path: Assets/Pickups/Prefabs/Key.prefab
-  artifactKey: Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Key.prefab using Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1dcee535826ed86f3ff5ac97b4226e') in 0.015738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 125.132496 seconds.
-  path: Assets/Pickups/Prefabs/CabinKey.prefab
-  artifactKey: Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/CabinKey.prefab using Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7e2c3b4853027768414808ea454667') in 0.009711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 57.301896 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit
-  artifactKey: Guid(9678c29ee63ad4e4f86e1ecee0388f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit using Guid(9678c29ee63ad4e4f86e1ecee0388f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86328a7c18ac711ce702a8712cee1e6') in 0.000621 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.138422 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/source
-  artifactKey: Guid(f366718d5fdac4db8bc7b918c588aa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/source using Guid(f366718d5fdac4db8bc7b918c588aa66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cc6764ee652cc70cca5e0968134de1') in 0.000277 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.052579 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/source/FIRST_AID_KIT.fbx
-  artifactKey: Guid(26e84a7a240ef4e7fadbfdf251b260b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/source/FIRST_AID_KIT.fbx using Guid(26e84a7a240ef4e7fadbfdf251b260b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec0c63aabe09ed47f8d497a7f525779') in 0.011424 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 4.466111 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/source/FIRST_AID_KIT.fbx
-  artifactKey: Guid(26e84a7a240ef4e7fadbfdf251b260b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/source/FIRST_AID_KIT.fbx using Guid(26e84a7a240ef4e7fadbfdf251b260b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38ec16b8753c7c51555a2d02d72668e') in 0.008040 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.036326 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/source/AIDKIT_OLIVE.mat
-  artifactKey: Guid(a5ffbad0e7375419886c2e0791b5960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/source/AIDKIT_OLIVE.mat using Guid(a5ffbad0e7375419886c2e0791b5960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74827d61bc0a930a1844f855c500822') in 0.003803 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 16.872341 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_base_AO.png
-  artifactKey: Guid(583ef4586f1c448cca0b62dc8491b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_base_AO.png using Guid(583ef4586f1c448cca0b62dc8491b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634427bf6e6a9cbf12e07dd1c50c6ebf') in 0.006594 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_roughness.png
-  artifactKey: Guid(969e93d659b814fbba500e62f3f50bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_roughness.png using Guid(969e93d659b814fbba500e62f3f50bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cabf610e64fd106adc49cdecd7dfeda') in 0.005300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.922760 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_normal.png
-  artifactKey: Guid(2213ae7ae9ea943bf8161fef012eadc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/textures/AIDKIT_normal.png using Guid(2213ae7ae9ea943bf8161fef012eadc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f833977e7055f2cfd44e03f9b9ff4ee') in 0.006333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 31.248523 seconds.
-  path: Assets/Pickups/tactical-first-aid-kit/source/AIDKIT_OLIVE.mat
-  artifactKey: Guid(a5ffbad0e7375419886c2e0791b5960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/tactical-first-aid-kit/source/AIDKIT_OLIVE.mat using Guid(a5ffbad0e7375419886c2e0791b5960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a95c974102af9e0dcc9c08c6b983c1') in 0.249146 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 157.241305 seconds.
-  path: Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab
-  artifactKey: Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab using Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55a7cb98bc1c64635787bbcbb991827') in 0.009831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 19
-========================================================================
-Received Import Request.
-  Time since last request: 87.655542 seconds.
-  path: Assets/Pickups/key/source/Key.obj
-  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8e7742b7b620b485c086b386ae04ad') in 0.010771 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 153.088853 seconds.
-  path: Assets/Pickups/key/textures
-  artifactKey: Guid(2ed5016b20f824e22a3d2651854d3d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/textures using Guid(2ed5016b20f824e22a3d2651854d3d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1509e627414a3448f07a14fb51c152f8') in 0.000867 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 176.423851 seconds.
-  path: Assets/Pickups/key4
-  artifactKey: Guid(4351c2c2a4a1c41feaff2d8d436a3c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key4 using Guid(4351c2c2a4a1c41feaff2d8d436a3c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74b9162d2d9dbdbe53dd4e3f9dec1f8') in 0.000518 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 26.927231 seconds.
-  path: Assets/Pickups/key/source/Key.obj
-  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea04745896001c5b875ad54fb7a4c7f') in 0.346596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 12.554911 seconds.
-  path: Assets/Pickups/key/source/Key.obj
-  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2744c1b6a468d55e139862b1aebcfc') in 0.113718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 170.325391 seconds.
-  path: Assets/Pickups/Prefabs/Key.prefab
-  artifactKey: Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Key.prefab using Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf158578005ae3757489b4d5a1bb87a') in 0.008563 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 5.604251 seconds.
-  path: Assets/Pickups/Prefabs/Key.prefab
-  artifactKey: Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Key.prefab using Guid(029240a6262124b7bb33228f12fd7cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56b4d3d0d11998ed040aa520ceedb6d') in 0.008036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 64.617555 seconds.
-  path: Assets/Pickups/Prefabs/HouseKey.prefab
-  artifactKey: Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/HouseKey.prefab using Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b98ebb2fa815209c23caf1abc436be') in 0.011426 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 88.302414 seconds.
-  path: Assets/Pickups/Prefabs/HouseKey.prefab
-  artifactKey: Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/HouseKey.prefab using Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892ed700aeaaf165d774e7a2b241d6eb') in 0.011109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 121.052587 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free
-  artifactKey: Guid(354b39c864cd54227825dce392948ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free using Guid(354b39c864cd54227825dce392948ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7df9e62166caefc8ce7c2a5cf4045f') in 0.000617 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.247339 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source
-  artifactKey: Guid(eb5c73d05410743b5a508295b7e14e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source using Guid(eb5c73d05410743b5a508295b7e14e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21603179c456f482811943e71444fd68') in 0.000430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.694327 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity
-  artifactKey: Guid(292c00e54461c4246a52507208170ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity using Guid(292c00e54461c4246a52507208170ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdcdd6b1d68351f40667c7b9c7616e4') in 0.000322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 45.023483 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Laboratory_cabinet_NakedSingularity.fbx
-  artifactKey: Guid(95a6c447cb9704d9fbde49fd66a6235d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/Laboratory_cabinet_NakedSingularity.fbx using Guid(95a6c447cb9704d9fbde49fd66a6235d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abfda6812d0e095d816c8ba901c1d9ca') in 0.020303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 0.019794 seconds.
-  path: Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/glass.mat
-  artifactKey: Guid(d69190c3d9f474e47b03570dc2cb4ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/laboratory-cabinet-storage-pbr-low-poly-free/source/Laboratory_cabinet_NakedSingularity/glass.mat using Guid(d69190c3d9f474e47b03570dc2cb4ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b161fdb0d0c8802b254ad95f096c03d2') in 0.005019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 5870.278310 seconds.
-  path: Assets/Pickups/Prefabs/Laboratory_cabinet_NakedSingularity.prefab
-  artifactKey: Guid(bdff1cb1b0aa74175ab2a25c37b1fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Laboratory_cabinet_NakedSingularity.prefab using Guid(bdff1cb1b0aa74175ab2a25c37b1fa84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce6c91739295f1a8947eb40a411d72d') in 0.307729 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 47
-========================================================================
-Received Import Request.
-  Time since last request: 437.184655 seconds.
-  path: Assets/Pickups/metal-cabinet
-  artifactKey: Guid(186de18a7fb3b4708ab36460fe15be2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet using Guid(186de18a7fb3b4708ab36460fe15be2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442cf3b7090230f5b7232ef7cddad6dd') in 0.002429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.607215 seconds.
-  path: Assets/Pickups/metal-cabinet/source
-  artifactKey: Guid(258beb5b0916644cf9f02fd857be0e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/source using Guid(258beb5b0916644cf9f02fd857be0e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76a932699bf51a1c07e9a0fe9926bb8') in 0.000308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 47.042625 seconds.
-  path: Assets/Pickups/metal-cabinet/source/safa pisla coata i maya.obj
-  artifactKey: Guid(be0240bfde72f42baa77997529331a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/source/safa pisla coata i maya.obj using Guid(be0240bfde72f42baa77997529331a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c536e2e55a7cf8d2e2115077892c1bd1') in 0.123680 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 88
-========================================================================
-Received Import Request.
-  Time since last request: 5.800184 seconds.
-  path: Assets/Pickups/metal-cabinet/source/safa pisla coata i maya.obj
-  artifactKey: Guid(be0240bfde72f42baa77997529331a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/source/safa pisla coata i maya.obj using Guid(be0240bfde72f42baa77997529331a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9341f2a80e3bcdf93287643aa82d8da') in 0.074171 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 88
-========================================================================
-Received Import Request.
-  Time since last request: 10.909708 seconds.
-  path: Assets/Pickups/metal-cabinet/textures
-  artifactKey: Guid(febe6b889488b450a8c3af3d41c3bffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/textures using Guid(febe6b889488b450a8c3af3d41c3bffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96acb307dddf4448b301ac52ece18dc') in 0.000440 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.319289 seconds.
-  path: Assets/Pickups/metal-cabinet/textures/safa_pisla_coata_albedo.tga.png
-  artifactKey: Guid(d5139f4542e9b495caa8dfbd93dc89b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/textures/safa_pisla_coata_albedo.tga.png using Guid(d5139f4542e9b495caa8dfbd93dc89b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137376614014fe0f4b98433f526291af') in 0.007031 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 397.035959 seconds.
-  path: Assets/Pickups/metal-cabinet/textures/safa_pisla_coata_roughness.tga.png
-  artifactKey: Guid(3815fe24afcb9489f9a51f21cc8de3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/metal-cabinet/textures/safa_pisla_coata_roughness.tga.png using Guid(3815fe24afcb9489f9a51f21cc8de3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b962ad068efd64a0a35eded9e42850ef') in 0.005980 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 112.514704 seconds.
+  Time since last request: 1372.193981 seconds.
   path: Assets/Pickups/Prefabs/safa pisla coata i maya.prefab
   artifactKey: Guid(2a8836111160242888a38800c88a3ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/safa pisla coata i maya.prefab using Guid(2a8836111160242888a38800c88a3ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3cbf4d25faf2c55316a96d476dbba7') in 0.017404 seconds
+Start importing Assets/Pickups/Prefabs/safa pisla coata i maya.prefab using Guid(2a8836111160242888a38800c88a3ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae478b221c7c724b2bdc6f826cd4d96') in 0.065257 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 153
 ========================================================================
 Received Import Request.
-  Time since last request: 171.654612 seconds.
-  path: Assets/Pickups/pills
-  artifactKey: Guid(aeb8cbacc8b044e9ca84fac1127478eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/pills using Guid(aeb8cbacc8b044e9ca84fac1127478eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2650b1e945817c41925e7315c1374b') in 0.001076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.555507 seconds.
-  path: Assets/Pickups/pills/source
-  artifactKey: Guid(9e46692b3646847558572b53d536dc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/pills/source using Guid(9e46692b3646847558572b53d536dc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dee84fe41869b935bd6d69a16ba6aed') in 0.000535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.913922 seconds.
-  path: Assets/Pickups/pills/source/pills.fbx
-  artifactKey: Guid(b70c9bd02d81a4a019cfd41f8b1f1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/pills/source/pills.fbx using Guid(b70c9bd02d81a4a019cfd41f8b1f1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02eb3299ceddcf0c56818f268bc9e75b') in 0.045666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 4.323569 seconds.
-  path: Assets/Pickups/pills/source/pills.fbx
-  artifactKey: Guid(b70c9bd02d81a4a019cfd41f8b1f1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/pills/source/pills.fbx using Guid(b70c9bd02d81a4a019cfd41f8b1f1234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e1681619faaac91511be9771479cb1') in 0.023319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 287.195630 seconds.
-  path: Assets/Pickups/Prefabs/pills.prefab
-  artifactKey: Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/pills.prefab using Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0410c1b4cfe3d8071ce1096eecba199d') in 0.015854 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 236.463651 seconds.
-  path: Assets/Pickups/Prefabs/Pills.prefab
-  artifactKey: Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/Pills.prefab using Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce71fe8c122ce5e12b881bf5557fc03') in 0.015581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 178.311421 seconds.
-  path: Assets/Pickups/Pistol Ammo
-  artifactKey: Guid(67ac8f31584714720bf577933c8a594f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Pistol Ammo using Guid(67ac8f31584714720bf577933c8a594f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67175788622e670f39aae6d85a5bb02e') in 0.000796 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.953374 seconds.
-  path: Assets/Pickups/Pistol Ammo/textures
-  artifactKey: Guid(6fbfb2f2159cd4028a3dfdab796c6778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Pistol Ammo/textures using Guid(6fbfb2f2159cd4028a3dfdab796c6778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5075dd7828455ff82e9395a624ca21') in 0.000315 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.122121 seconds.
-  path: Assets/Pickups/Pistol Ammo/PistolAmmo.fbx
-  artifactKey: Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Pistol Ammo/PistolAmmo.fbx using Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86c08db8a4a66682ab186d4d07fc291') in 0.052781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 3.455663 seconds.
-  path: Assets/Pickups/Pistol Ammo/PistolAmmo.fbx
-  artifactKey: Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Pistol Ammo/PistolAmmo.fbx using Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6485dde58d33aa8803f7d9a15cc621') in 0.024933 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 1442.475956 seconds.
-  path: Assets/Pickups/Prefabs/PistolAmmo.prefab
-  artifactKey: Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/PistolAmmo.prefab using Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e44a6701d28107ab51e9af808ebadf1') in 0.236231 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 4178.602233 seconds.
-  path: Assets/Pickups/Prefabs/PistolAmmo.prefab
-  artifactKey: Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/PistolAmmo.prefab using Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64d9d3119385ada9ac7b49026488d6e') in 0.031645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 45
-========================================================================
-Received Import Request.
-  Time since last request: 293.063438 seconds.
-  path: Assets/Pickups/shotgun-ammo-box
-  artifactKey: Guid(b48131092c26447cb92b7f33a6ce2bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box using Guid(b48131092c26447cb92b7f33a6ce2bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964c546cc2f1ad5b2ca06a46e5bfb31d') in 0.000873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.534362 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source
-  artifactKey: Guid(531a52abec164441e98f4113ef3e14f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source using Guid(531a52abec164441e98f4113ef3e14f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74175f5e811c520d6e7020746fb1a2d') in 0.000271 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.289714 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source/ShotgunShell
-  artifactKey: Guid(1ac9ab491a8064b529a520659ed07d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source/ShotgunShell using Guid(1ac9ab491a8064b529a520659ed07d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc681e79d954134d5fb249c1ae3f002d') in 0.000295 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.631597 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/12G_metallic.tga.png
-  artifactKey: Guid(6d1d068be951042ff8ce26056cd01a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/12G_metallic.tga.png using Guid(6d1d068be951042ff8ce26056cd01a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd758e61bae1e6f28114141d68ddd9086') in 0.006263 seconds
+  Time since last request: 1006.924135 seconds.
+  path: Assets/AutoLOD/Generated/BulletBox_LOD2.asset
+  artifactKey: Guid(334990d7c17624be79d514d81ce4b041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/BulletBox_LOD2.asset using Guid(334990d7c17624be79d514d81ce4b041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad58a05607f4b52692b0f30b01bc946a') in 0.021052 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 7.368667 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.mtl
-  artifactKey: Guid(febd34d0a3d8c44e18ba6b7b72df1c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.mtl using Guid(febd34d0a3d8c44e18ba6b7b72df1c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd748383342da78ffaa1e69e5fac2e1') in 0.000690 seconds
+  Time since last request: 1.884352 seconds.
+  path: Assets/Pickups/Pistol Ammo/PistolAmmo.fbx
+  artifactKey: Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Pistol Ammo/PistolAmmo.fbx using Guid(f63c2f3452ab842058aa2d3a288a1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ac981f23806f65a34b5e328c181acf') in 0.176871 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 28
 ========================================================================
 Received Import Request.
-  Time since last request: 2.275024 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.obj
-  artifactKey: Guid(521b31440228b4b6dac1192270d4a3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.obj using Guid(521b31440228b4b6dac1192270d4a3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e15a6c4a546e1d0d0e2a37ffb4609e') in 0.018922 seconds
+  Time since last request: 0.558192 seconds.
+  path: Assets/AutoLOD/Generated/BulletBox_LOD1.asset
+  artifactKey: Guid(7cbba2f460bf7428ca2b3fdfc138e33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/BulletBox_LOD1.asset using Guid(7cbba2f460bf7428ca2b3fdfc138e33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ee7ad26fefc431e33a65db5eded76e') in 0.009306 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 9.852028 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.obj
-  artifactKey: Guid(521b31440228b4b6dac1192270d4a3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/source/ShotgunShell/ShotgunShell.obj using Guid(521b31440228b4b6dac1192270d4a3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd60fb3e28096815644b556a15876f69') in 0.012983 seconds
+  Time since last request: 527.455107 seconds.
+  path: Assets/Pickups/Prefabs/PistolAmmo.prefab
+  artifactKey: Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/PistolAmmo.prefab using Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56fd24ffed5b9ed0aa9e6c66091bd51e') in 0.033195 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 58
 ========================================================================
 Received Import Request.
-  Time since last request: 102.914651 seconds.
-  path: Assets/Pickups/shotgun-ammo-box/textures
-  artifactKey: Guid(e956e419ce5404d538d219b455d78ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/shotgun-ammo-box/textures using Guid(e956e419ce5404d538d219b455d78ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01488b3c91761cd4f43b1c14ec1babc') in 0.000317 seconds
+  Time since last request: 1295.690677 seconds.
+  path: Assets/AutoLOD/Generated/HouseKey_LOD1.asset
+  artifactKey: Guid(3905d2b1c3ffc466a9586756ed76ee18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/HouseKey_LOD1.asset using Guid(3905d2b1c3ffc466a9586756ed76ee18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdc5605475668047d5eee9ce5988289') in 0.005097 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 572.371787 seconds.
-  path: Assets/Pickups/Prefabs/ShotgunAmmo.prefab
-  artifactKey: Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/ShotgunAmmo.prefab using Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0655d1f5f612fd99e7d183f84f6cd5f6') in 0.285098 seconds
+  Time since last request: 31.117457 seconds.
+  path: Assets/AutoLOD/Generated/HouseKey_LOD2.asset
+  artifactKey: Guid(74a0ca9871aab4555936842faa3c564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/HouseKey_LOD2.asset using Guid(74a0ca9871aab4555936842faa3c564a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fce7d36cc3ff7b61ea681c039febefd') in 0.005224 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 147.454071 seconds.
-  path: Assets/Pickups/trash-can
-  artifactKey: Guid(5db5f02d7ea794dcb8a78f358b997b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/trash-can using Guid(5db5f02d7ea794dcb8a78f358b997b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a3aea328a74d43e6026a31980446bd') in 0.001200 seconds
+  Time since last request: 20.839658 seconds.
+  path: Assets/Pickups/key/source/Key.obj
+  artifactKey: Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/key/source/Key.obj using Guid(3f55317a6c7fd4cb595b6f088da616dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4becbaeed7c2a3d1d17d9ee3d0e8561') in 0.057229 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 13
 ========================================================================
 Received Import Request.
-  Time since last request: 1.938829 seconds.
-  path: Assets/Pickups/trash-can/source
-  artifactKey: Guid(0ccaf9e1123a74649a330a1b10b74b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/trash-can/source using Guid(0ccaf9e1123a74649a330a1b10b74b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50755a61dfe558d230a88137f2102cd3') in 0.000280 seconds
+  Time since last request: 77.120143 seconds.
+  path: Assets/Pickups/Prefabs/HouseKey.prefab
+  artifactKey: Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/HouseKey.prefab using Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db53415684c171bc33a8dcd795d5842a') in 0.009843 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 24
 ========================================================================
 Received Import Request.
-  Time since last request: 2.969165 seconds.
-  path: Assets/Pickups/trash-can/source/trash_can_finish.fbx
-  artifactKey: Guid(b753b974ca4164b1a8e789e4d8e05fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/trash-can/source/trash_can_finish.fbx using Guid(b753b974ca4164b1a8e789e4d8e05fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b1904039a7b646c67479f1afe03bb4') in 0.094958 seconds
+  Time since last request: 380.699221 seconds.
+  path: Assets/AutoLOD/Generated/Cloths_LOD1.asset
+  artifactKey: Guid(c805d327f22d94f069b0844c4d2372fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Cloths_LOD1.asset using Guid(c805d327f22d94f069b0844c4d2372fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bedc9963664134e2e025d1f0feab5742') in 0.005786 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 101
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 15.339704 seconds.
-  path: Assets/Pickups/trash-can/source/trash_can_finish.fbx
-  artifactKey: Guid(b753b974ca4164b1a8e789e4d8e05fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/trash-can/source/trash_can_finish.fbx using Guid(b753b974ca4164b1a8e789e4d8e05fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e25f5f06b2b2515c192ae2c4c73aeee') in 0.057110 seconds
+  Time since last request: 72.819083 seconds.
+  path: Assets/Pickups/Prefabs/Cloths.prefab
+  artifactKey: Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Cloths.prefab using Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8635670e4c9fee4def61a59af8d39a') in 0.027159 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 101
+Number of asset objects unloaded after import = 25
 ========================================================================
 Received Import Request.
-  Time since last request: 442.439796 seconds.
-  path: Assets/Pickups/Prefabs/ClosedDumpster.prefab
-  artifactKey: Guid(fd6de28f9522f4c75a8c8c487fac9fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/ClosedDumpster.prefab using Guid(fd6de28f9522f4c75a8c8c487fac9fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a231136d8a39d7dda3f44d237fc506') in 0.014462 seconds
+  Time since last request: 16.222016 seconds.
+  path: Assets/AutoLOD/Generated/Cloths_LOD2.asset
+  artifactKey: Guid(c37eb8ab872144b558a8e675d559fc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Cloths_LOD2.asset using Guid(c37eb8ab872144b558a8e675d559fc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f951868c65d9eeb848c54eb23582ca9') in 0.011727 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 97.078649 seconds.
-  path: Assets/Pickups/Prefabs/FallenDumpster.prefab
-  artifactKey: Guid(b19581571a0c9422293860cdcd9fd7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/FallenDumpster.prefab using Guid(b19581571a0c9422293860cdcd9fd7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4737fb88e8a423ee2dd35cf1caabdc') in 0.014282 seconds
+  Time since last request: 178.672540 seconds.
+  path: Assets/AutoLOD/Generated/CabinKey_LOD1.asset
+  artifactKey: Guid(25fe1f6ef79984976819208873e4c086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/CabinKey_LOD1.asset using Guid(25fe1f6ef79984976819208873e4c086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36556383d04ec253e4f15eedbfd1e6a') in 0.006944 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 76.690319 seconds.
-  path: Assets/Pickups/Prefabs/OpenDumpster.prefab
-  artifactKey: Guid(f8cc90818c5544bd58c40e15875cafb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pickups/Prefabs/OpenDumpster.prefab using Guid(f8cc90818c5544bd58c40e15875cafb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bd732725fe8db5b58ba61cc98084ab') in 0.014536 seconds
+  Time since last request: 50.606001 seconds.
+  path: Assets/Pickups/Prefabs/CabinKey.prefab
+  artifactKey: Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/CabinKey.prefab using Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0efe52c56648438448154f5fe90f47') in 0.027544 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 1903.329425 seconds.
+  path: Assets/AutoLOD/Generated/Botle_LOD1.asset
+  artifactKey: Guid(ae484ac2c8d5549128a4a30bae3b1542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Botle_LOD1.asset using Guid(ae484ac2c8d5549128a4a30bae3b1542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5ee3976e67a334171de613b339c12d') in 0.007244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.867109 seconds.
+  path: Assets/AutoLOD/Generated/Botle_LOD2.asset
+  artifactKey: Guid(5eb9c29b7f7824aed8b0d7f0d6cbf8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AutoLOD/Generated/Botle_LOD2.asset using Guid(5eb9c29b7f7824aed8b0d7f0d6cbf8e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8606d85434618743c5d48f946229436c') in 0.006105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 137.953819 seconds.
+  path: Assets/Pickups/Prefabs/BottlePickup.prefab
+  artifactKey: Guid(8d04ae888082a4a8693e3dc7ff8e3e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/BottlePickup.prefab using Guid(8d04ae888082a4a8693e3dc7ff8e3e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efeff607bd358e4c05124c22f837587') in 0.033054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
