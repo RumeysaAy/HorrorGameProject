@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5045065810933329597}
   - component: {fileID: 7940141227218800215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HouseKey
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,8 @@ GameObject:
   - component: {fileID: 8398575021663172558}
   - component: {fileID: 4413402367146651553}
   - component: {fileID: 4714135843888577462}
-  m_Layer: 0
+  - component: {fileID: 5284532946689538867}
+  m_Layer: 8
   m_Name: HouseKey_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &5284532946689538867
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800508719636312223}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6267972610138179094
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +178,8 @@ GameObject:
   - component: {fileID: 6890049341583380429}
   - component: {fileID: 3875922888414048589}
   - component: {fileID: 8210177715959780214}
-  m_Layer: 0
+  - component: {fileID: 1999060195464261577}
+  m_Layer: 8
   m_Name: HouseKey_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +251,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &1999060195464261577
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6267972610138179094}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8928785774469160627
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +283,8 @@ GameObject:
   - component: {fileID: 1729456686092760100}
   - component: {fileID: 6122837595655279216}
   - component: {fileID: 8716515061785729514}
-  m_Layer: 0
+  - component: {fileID: 8995446508962064159}
+  m_Layer: 8
   m_Name: HouseKey_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,3 +356,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &8995446508962064159
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928785774469160627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

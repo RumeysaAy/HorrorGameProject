@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 717470911203997059}
   - component: {fileID: 3420312922354654160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cloths
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979151289777825650}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 457.10654, y: 27.401, z: 150.12}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 0
@@ -73,7 +73,8 @@ GameObject:
   - component: {fileID: 7687953536822178207}
   - component: {fileID: 7962938378854510633}
   - component: {fileID: 9036969478393636711}
-  m_Layer: 0
+  - component: {fileID: 90477743997896336}
+  m_Layer: 8
   m_Name: Cloths_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,6 +146,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &90477743997896336
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001236085945003531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3106876536010332429
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +178,8 @@ GameObject:
   - component: {fileID: 1306072268222532850}
   - component: {fileID: 1945863652165682930}
   - component: {fileID: 743817693935410404}
-  m_Layer: 0
+  - component: {fileID: 2186594005374200135}
+  m_Layer: 8
   m_Name: Cloths_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +251,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2186594005374200135
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106876536010332429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7168673115144011068
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +283,8 @@ GameObject:
   - component: {fileID: 1572739850643414125}
   - component: {fileID: 4304457090022948476}
   - component: {fileID: 6310533475709893289}
-  m_Layer: 0
+  - component: {fileID: 2598714165946161303}
+  m_Layer: 8
   m_Name: Cloths_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,3 +356,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2598714165946161303
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168673115144011068}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

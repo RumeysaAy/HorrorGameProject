@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2367942937317423276}
   - component: {fileID: 3831944919796047135}
   - component: {fileID: 3618253039943192800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lighter
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

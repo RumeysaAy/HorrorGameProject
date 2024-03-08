@@ -1590,3 +1590,219 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1126.983017 seconds.
+  path: Assets/Pickups/Prefabs/BaseballBatPickup.prefab
+  artifactKey: Guid(de93116aecd6f4e0d9400f5085d4e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/BaseballBatPickup.prefab using Guid(de93116aecd6f4e0d9400f5085d4e869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e40f1be322e8d649f5d47f2afe8b655') in 0.051593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Pickups/Prefabs/pistol1Pickup.prefab
+  artifactKey: Guid(e7eab1f77bc704068887d6ce2a307f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/pistol1Pickup.prefab using Guid(e7eab1f77bc704068887d6ce2a307f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4b83ee2a3d449cf2858b6fd0b54ca1') in 0.015788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Pickups/Prefabs/shotgunPickup.prefab
+  artifactKey: Guid(7da2fbe908478436fae0dfba513e131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/shotgunPickup.prefab using Guid(7da2fbe908478436fae0dfba513e131b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f778137154dd959d30290ce23e38bc9a') in 0.009752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Pickups/Prefabs/HRRAxePickups.prefab
+  artifactKey: Guid(03bf7a3ad6d9040fc8db263af62df2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/HRRAxePickups.prefab using Guid(03bf7a3ad6d9040fc8db263af62df2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00c30e55dccf401ebe304ccd68eb46d') in 0.012240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Pickups/Prefabs/cleaverPickup.prefab
+  artifactKey: Guid(b659bb54da68448158f5dc0392373899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/cleaverPickup.prefab using Guid(b659bb54da68448158f5dc0392373899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e299064816d83c06afac5c869a28b275') in 0.014315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Pickups/Prefabs/SprayPaintPickup.prefab
+  artifactKey: Guid(620381fe71a9f462c890cf32bedc54dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/SprayPaintPickup.prefab using Guid(620381fe71a9f462c890cf32bedc54dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70c8af728b5c00454d6e04046fa5252') in 0.014970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 118.325839 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc648746c5183186c1f4e87698658dda') in 0.000780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 153.392671 seconds.
+  path: Assets/Pickups/Prefabs/Apple.prefab
+  artifactKey: Guid(c7236c9d4db754d4ebb5d183cefeb02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Apple.prefab using Guid(c7236c9d4db754d4ebb5d183cefeb02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c1e34d0e8ef263f03af4754a3bbc69') in 0.012125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 546.574758 seconds.
+  path: Assets/Pickups/Prefabs/PistolAmmo.prefab
+  artifactKey: Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/PistolAmmo.prefab using Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41cec4fa1fa30e4c17850671d623e37') in 0.027772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 67
+========================================================================
+Received Import Request.
+  Time since last request: 2.178886 seconds.
+  path: Assets/Pickups/Prefabs/PistolAmmo.prefab
+  artifactKey: Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/PistolAmmo.prefab using Guid(b18247620efa54006b842f6e47140831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0280c6f4eeb54d9bb276cc7ac9d184a0') in 0.223054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 67
+========================================================================
+Received Import Request.
+  Time since last request: 664.989553 seconds.
+  path: Assets/Pickups/Prefabs/BatteryFL.prefab
+  artifactKey: Guid(b4703140d304943aca8c00b360361efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/BatteryFL.prefab using Guid(b4703140d304943aca8c00b360361efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aadf3307ca14b7eaa7783b09d7bf760') in 0.006817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 57.083203 seconds.
+  path: Assets/Pickups/Prefabs/BatteryNV.prefab
+  artifactKey: Guid(c6d1cf39ab0b1428db091cbbbae1ee90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/BatteryNV.prefab using Guid(c6d1cf39ab0b1428db091cbbbae1ee90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bc40b5f8a25e811da3f62e324d4e10') in 0.005820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 111.103754 seconds.
+  path: Assets/Pickups/Prefabs/CabinKey.prefab
+  artifactKey: Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/CabinKey.prefab using Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93b78d439ba49b6cf7a12c749dd6480') in 0.015387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 75.290325 seconds.
+  path: Assets/Pickups/Prefabs/Cloths.prefab
+  artifactKey: Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Cloths.prefab using Guid(9afe658998b1b42fab7e08beb376aca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb6fa38600728b55bdf32dbcd28063b') in 0.013439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 1.670915 seconds.
+  path: Assets/Pickups/Prefabs/CabinKey.prefab
+  artifactKey: Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/CabinKey.prefab using Guid(a883dc14acfc143758d5dd6b98b69230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50ab21c55df34cb7069f927243447b2') in 0.032216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 90.326930 seconds.
+  path: Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab
+  artifactKey: Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab using Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4f23c8f5b6ab5bdefcc149dcca9cba') in 0.035789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.571062 seconds.
+  path: Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab
+  artifactKey: Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/FIRST_AID_KIT.prefab using Guid(0f934a0ac464c44219b28ea9a991a279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd3b76e410826aee8599d46c0cb28d2') in 0.114967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 47.949355 seconds.
+  path: Assets/Pickups/Prefabs/HouseKey.prefab
+  artifactKey: Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/HouseKey.prefab using Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8e2ff5fd2d308571bf7187f906adc9') in 0.010845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 1.441090 seconds.
+  path: Assets/Pickups/Prefabs/HouseKey.prefab
+  artifactKey: Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/HouseKey.prefab using Guid(23f0cb76309a8440c8a254a1968d2893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400bd979c6cb5baa8fc675ae66d3ecb5') in 0.142957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 111.182106 seconds.
+  path: Assets/Pickups/Prefabs/jerrycan.prefab
+  artifactKey: Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/jerrycan.prefab using Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a99acfa315922d22c995919276c34d8') in 0.007363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 1.688320 seconds.
+  path: Assets/Pickups/Prefabs/jerrycan.prefab
+  artifactKey: Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/jerrycan.prefab using Guid(3964c830de8cc41a7aa7d46a69aa8412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8a38e39130fbac9ba40b8cf95f631d') in 0.007155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 66.297095 seconds.
+  path: Assets/Pickups/Prefabs/Lighter.prefab
+  artifactKey: Guid(54499dffa7c324212bc2d25d0fda6da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Lighter.prefab using Guid(54499dffa7c324212bc2d25d0fda6da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad4871e44dfc6fb952399674c811a7b') in 0.009200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 101.159680 seconds.
+  path: Assets/Pickups/Prefabs/Pills.prefab
+  artifactKey: Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Pills.prefab using Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b97da3beb19812ab74c8f541a9177e0') in 0.009681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 1.881442 seconds.
+  path: Assets/Pickups/Prefabs/Pills.prefab
+  artifactKey: Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/Pills.prefab using Guid(f8e167e400be04f3f8da81766cc3301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcde6f16250d5c760573cabc601dbc2') in 0.009390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 119.960749 seconds.
+  path: Assets/Pickups/Prefabs/ShotgunAmmo.prefab
+  artifactKey: Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/ShotgunAmmo.prefab using Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c82b4f3caa33a332ad28b94695ac78') in 0.071432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.782081 seconds.
+  path: Assets/Pickups/Prefabs/ShotgunAmmo.prefab
+  artifactKey: Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/ShotgunAmmo.prefab using Guid(c3c533635cc174691a9df991e941726d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97dcf654e8dc03873f239989585e5fc') in 0.026204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 98.184193 seconds.
+  path: Assets/Pickups/Prefabs/WaterBottle.prefab
+  artifactKey: Guid(ad9f13ffcc0564adf81054e5e6f8d58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pickups/Prefabs/WaterBottle.prefab using Guid(ad9f13ffcc0564adf81054e5e6f8d58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c4e08371128e0ff836de1b376211c2') in 0.007382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17

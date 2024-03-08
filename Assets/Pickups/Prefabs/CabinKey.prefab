@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4069906809199008688}
   - component: {fileID: 294760645515739539}
   - component: {fileID: 3500576019641174894}
-  m_Layer: 0
+  - component: {fileID: 4384733407349360901}
+  m_Layer: 8
   m_Name: CabinKey_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &4384733407349360901
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951694035227409396}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6262490415523370245
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,9 +115,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6841255836397112751}
   - component: {fileID: 1044077672647459633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CabinKey
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +178,8 @@ GameObject:
   - component: {fileID: 3837862229752600271}
   - component: {fileID: 1934804077949895612}
   - component: {fileID: 8346782953762387652}
-  m_Layer: 0
+  - component: {fileID: 48247233339328596}
+  m_Layer: 8
   m_Name: CabinKey_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +251,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &48247233339328596
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6678400960951448522}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8234233157188841263
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +283,8 @@ GameObject:
   - component: {fileID: 8043724926793242197}
   - component: {fileID: 5194160008089260475}
   - component: {fileID: 800560687464514428}
-  m_Layer: 0
+  - component: {fileID: 2336402135122241965}
+  m_Layer: 8
   m_Name: CabinKey_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,3 +356,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2336402135122241965
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234233157188841263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0d3251ce8de5426ebc9b18138282d90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
