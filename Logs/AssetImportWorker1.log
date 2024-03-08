@@ -210,3 +210,11 @@ Received Import Request.
 Start importing Assets/Pickups/Prefabs/Shelf.prefab using Guid(90001f3eb3f7f46bbbd63049a92c8b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cd02bf76a11591898213913925cb12') in 0.062788 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 7986.022222 seconds.
+  path: Assets/Survival Kit Lite/Baterry/Materials/Baterry_mat NV.mat
+  artifactKey: Guid(a84c9743507a34e30915b821a6b22c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Survival Kit Lite/Baterry/Materials/Baterry_mat NV.mat using Guid(a84c9743507a34e30915b821a6b22c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52c971c071eeb8e4fc26b7424ee1404') in 0.027979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
