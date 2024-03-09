@@ -6,6 +6,7 @@ TagManager:
   tags:
   - weapon
   - item
+  - ammo
   layers:
   - Default
   - TransparentFX

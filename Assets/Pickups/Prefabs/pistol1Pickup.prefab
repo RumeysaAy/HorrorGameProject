@@ -324,6 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8156688126777053674}
+  - component: {fileID: 2823056145537586169}
   m_Layer: 8
   m_Name: pistol1Pickup
   m_TagString: weapon
@@ -350,6 +351,27 @@ Transform:
   - {fileID: 3526735856211821915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2823056145537586169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2822529686228605367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.2, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0.17}
 --- !u!1 &6845061715083840021
 GameObject:
   m_ObjectHideFlags: 0

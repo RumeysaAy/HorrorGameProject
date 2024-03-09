@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5045065810933329597}
   - component: {fileID: 7940141227218800215}
+  - component: {fileID: 6354793837235699276}
   m_Layer: 8
   m_Name: HouseKey
   m_TagString: item
@@ -62,6 +63,27 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4714135843888577462}
   m_Enabled: 1
+--- !u!65 &6354793837235699276
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148413402238461898}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 577.6746, y: 50.982567, z: 786.669}
+  m_Center: {x: 5.4717565, y: 9.38712, z: 12.576357}
 --- !u!1 &5800508719636312223
 GameObject:
   m_ObjectHideFlags: 0

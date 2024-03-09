@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3085985221379162248}
   - component: {fileID: 6939070316853454606}
   - component: {fileID: 5872280888673873117}
+  - component: {fileID: 2261017959778978601}
   m_Layer: 8
   m_Name: BaseballBatPickup
   m_TagString: weapon
@@ -105,3 +106,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &2261017959778978601
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5152751399201813643}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.08244351
+  m_Height: 1.0859747
+  m_Direction: 1
+  m_Center: {x: -0.0021472052, y: 0.0055018067, z: -0.00211047}
