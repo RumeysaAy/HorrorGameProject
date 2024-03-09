@@ -373,10 +373,12 @@
 "Assets/Scripts/LightHouseRotator.cs"
 "Assets/Scripts/LookMode.cs"
 "Assets/Scripts/NightVisionScript.cs"
+"Assets/Scripts/PickupsScript.cs"
 "Assets/Scripts/SaveScript.cs"
 "Assets/Scripts/UIScale.cs"
 "Assets/Scripts/WeaponInventory.cs"
 "Assets/Scripts/WeaponManager.cs"
+"Assets/Scripts/WeaponType.cs"
 -langversion:9.0
 
 /deterministic

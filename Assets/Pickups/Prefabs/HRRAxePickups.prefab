@@ -115,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7322851292724506125}
   - component: {fileID: 3573071699434390353}
+  - component: {fileID: 2510080894861120548}
   m_Layer: 8
   m_Name: HRRAxePickups
   m_TagString: weapon
@@ -159,3 +160,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 27, y: 22, z: 2}
   m_Center: {x: -27.64, y: 16.3, z: 3.77}
+--- !u!114 &2510080894861120548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088178788852300069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c7e8ba42e984d0395f40c2116b9ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 3

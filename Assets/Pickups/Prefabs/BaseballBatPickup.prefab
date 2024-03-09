@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6939070316853454606}
   - component: {fileID: 5872280888673873117}
   - component: {fileID: 2261017959778978601}
+  - component: {fileID: 466307085285276023}
   m_Layer: 8
   m_Name: BaseballBatPickup
   m_TagString: weapon
@@ -129,3 +130,16 @@ CapsuleCollider:
   m_Height: 1.0859747
   m_Direction: 1
   m_Center: {x: -0.0021472052, y: 0.0055018067, z: -0.00211047}
+--- !u!114 &466307085285276023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5152751399201813643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c7e8ba42e984d0395f40c2116b9ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseWeapon: 2
