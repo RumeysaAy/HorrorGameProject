@@ -9,6 +9,7 @@ public class PickupsScript : MonoBehaviour
     private RaycastHit hit; // vurulan herhangi bir nesneyi depolayacak
     public LayerMask excludeLayers; // seçilen Layer'lar görmezden gelinir. sadece pickups layer'ını seçmedim. seçilen katmanlardaki nesneler algılanmayacak
     public GameObject pickupPanel; // baktığımız silahı gösteren panel
+    public float pickupDisplayDistance = 8f;
 
     public Image mainImage; // ışının çarptığı silahın resminin koyulacağı yer
     public Sprite[] weaponIcons; // silahların resmi
@@ -16,12 +17,13 @@ public class PickupsScript : MonoBehaviour
     public string[] weaponTitles; // silahların adı
 
     private int objID = 0; // hangi silah türüne vurduğumuza bağlı değişecek (WeaponType.cs)
+    private AudioSource audioPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         pickupPanel.SetActive(false);
-
+        audioPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,14 +38,30 @@ public class PickupsScript : MonoBehaviour
             // yalnızca weapon etiketi olan nesneleri tespit ettiğimden emin olmak istiyorum.
             if (hit.transform.gameObject.CompareTag("weapon")) // yalnızca bir silahsa
             {
-                // ışının çarptığı nesne silahsa panel açılsın
-                pickupPanel.SetActive(true);
+                // oyuncunun konumu ile vurulan nesnenin konumu arasındaki mesafe 8'den küçükse ise panel açılsın
+                if (Vector3.Distance(transform.position, hit.transform.position) < pickupDisplayDistance)
+                {
+                    // ışının çarptığı nesne silahsa panel açılsın
+                    pickupPanel.SetActive(true);
 
-                // hangi silahı işaret ettiğimizi tespit edebilmek için WeaponType.cs dosyasını kullanacağız.
-                objID = (int)hit.transform.gameObject.GetComponent<WeaponType>().chooseWeapon;
-                // ışının çarptığı silaha bağlı olarak başlığın ve görselin değişmesi için
-                mainImage.sprite = weaponIcons[objID];
-                mainTitle.text = weaponTitles[objID];
+                    // hangi silahı işaret ettiğimizi tespit edebilmek için WeaponType.cs dosyasını kullanacağız.
+                    objID = (int)hit.transform.gameObject.GetComponent<WeaponType>().chooseWeapon;
+                    // ışının çarptığı silaha bağlı olarak başlığın ve görselin değişmesi için
+                    mainImage.sprite = weaponIcons[objID];
+                    mainTitle.text = weaponTitles[objID];
+
+                    // e'ye bastığımızda silahı alacağız ve SaveScript.cs dosyasına silaha sahip olduğumuzu kaydedeceğiz
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        // hangi silah alınmışsa o silahın indeksindeki değer 1 olur
+                        SaveScript.weaponAmts[objID]++;
+
+                        audioPlayer.Play(); // silah alındığında ses oynatılacak
+
+                        // silahı aldığımız için yok edeceğiz
+                        Destroy(hit.transform.gameObject, 0.2f);
+                    }
+                }
             }
             else
             {
