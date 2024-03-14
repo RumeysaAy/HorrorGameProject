@@ -58,6 +58,8 @@ public class PickupsScript : MonoBehaviour
 
                         audioPlayer.Play(); // silah alındığında ses oynatılacak
 
+                        SaveScript.change = true; // silah toplandığı için
+
                         // silahı aldığımız için yok edeceğiz
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
