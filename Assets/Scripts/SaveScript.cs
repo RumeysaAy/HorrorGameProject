@@ -11,6 +11,7 @@ public class SaveScript : MonoBehaviour
     public static int itemID = 0;
     public static bool[] itemsPickedUp = new bool[13];
     public static int[] weaponAmts = new int[8]; // alınan silahlar
+    public static int[] itemAmts = new int[13]; // alınan item'lar
     public static bool change = false; // eğer silah toplandıysa true olur
 
     // Start is called before the first frame update
@@ -19,10 +20,8 @@ public class SaveScript : MonoBehaviour
         // bıçak her zaman olacak
         weaponsPickedUp[0] = true; // 1. silah true yani 1. silaha sahibim (knife)
 
-        itemsPickedUp[0] = true;
-        itemsPickedUp[2] = true; // çakmak toplandı mı?
-        itemsPickedUp[3] = true; // kumaş toplandı mı?
-        itemsPickedUp[9] = true;
+        itemsPickedUp[0] = true; // el feneri toplandı mı?
+        itemsPickedUp[1] = true; // gece görüşü toplandı mı?
     }
 
     // Update is called once per frame
@@ -38,7 +37,7 @@ public class SaveScript : MonoBehaviour
             inventoryOpen = false;
         }
 
-        if (change == true) // silah toplandıysa
+        if (change == true) // silah veya item toplandıysa
         {
             change = false;
 
@@ -53,6 +52,20 @@ public class SaveScript : MonoBehaviour
                 {
                     // i. indeksteki silah hiç toplanmamışsa
                     weaponsPickedUp[i] = false;
+                }
+            }
+
+            for (int i = 2; i < itemAmts.Length; i++)
+            {
+                if (itemAmts[i] > 0)
+                {
+                    // i. indeksteki item'ın i. indeksteki değeri eğer 0'dan büyükse toplanmıştır.
+                    itemsPickedUp[i] = true; // i. indeksteki silah
+                }
+                else if (itemAmts[i] == 0)
+                {
+                    // i. indeksteki item hiç toplanmamışsa
+                    itemsPickedUp[i] = false;
                 }
             }
         }

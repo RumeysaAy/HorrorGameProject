@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2150968492753119273}
   - component: {fileID: 6325624354001571186}
   - component: {fileID: 530110493797396872}
+  - component: {fileID: 3103983071652258684}
   m_Layer: 8
   m_Name: BatteryNV
   m_TagString: item
@@ -127,3 +128,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.21181946, y: 0.4118677, z: 0.21726689}
   m_Center: {x: 0.000000029802326, y: 0.012331026, z: -0.000000037252907}
+--- !u!114 &3103983071652258684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944343889099568446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c7ffed047774902b8453db37558dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseItem: 9

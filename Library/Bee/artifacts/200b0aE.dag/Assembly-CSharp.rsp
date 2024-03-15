@@ -369,6 +369,7 @@
 "Assets/Scripts/FlashLightScript.cs"
 "Assets/Scripts/InventorySwitch.cs"
 "Assets/Scripts/ItemsInventory.cs"
+"Assets/Scripts/ItemsType.cs"
 "Assets/Scripts/LighterScript.cs"
 "Assets/Scripts/LightHouseRotator.cs"
 "Assets/Scripts/LookMode.cs"
