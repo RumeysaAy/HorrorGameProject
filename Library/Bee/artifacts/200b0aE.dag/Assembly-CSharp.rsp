@@ -366,6 +366,7 @@
 "Assets/SampleScenes/Scripts/ParticleSceneControls.cs"
 "Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs"
 "Assets/SampleScenes/Scripts/SlowMoButton.cs"
+"Assets/Scripts/AmmoType.cs"
 "Assets/Scripts/FlashLightScript.cs"
 "Assets/Scripts/InventorySwitch.cs"
 "Assets/Scripts/ItemsInventory.cs"

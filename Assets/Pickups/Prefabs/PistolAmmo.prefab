@@ -337,15 +337,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 458.94617
+      value: 457.24835
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.33
+      value: 27.118902
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 158.03
+      value: 158.73898
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       propertyPath: m_LocalRotation.w
@@ -433,6 +433,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2141973766205276466}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6637851010080633176}
     - targetCorrespondingSourceObject: {fileID: -4495341902998619831, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2201985640805088636}
@@ -474,6 +477,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9, y: 1, z: 1}
   m_Center: {x: 0.44, y: 0.47, z: -0.03}
+--- !u!114 &6637851010080633176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132583640088696495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a13f12b98ed84fba843eefc745462d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chooseAmmo: 0
 --- !u!1 &5819858047602807479 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4495341902998619831, guid: f63c2f3452ab842058aa2d3a288a1634, type: 3}

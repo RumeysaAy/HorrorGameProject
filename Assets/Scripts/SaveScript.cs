@@ -12,6 +12,7 @@ public class SaveScript : MonoBehaviour
     public static bool[] itemsPickedUp = new bool[13];
     public static int[] weaponAmts = new int[8]; // her silahtan kaç tane var?
     public static int[] itemAmts = new int[13]; // her item'dan kaç tane var?
+    public static int[] ammoAmts = new int[2]; // her mermiden kaç tane var?
     public static bool change = false; // eğer silah toplandıysa true olur
 
     // Start is called before the first frame update
@@ -26,6 +27,8 @@ public class SaveScript : MonoBehaviour
         itemAmts[0] = 1; // el fenerinden 1 tane var
         itemAmts[1] = 1; // gece görüş gözlüğünden 1 tane var
         weaponAmts[0] = 1; // bıçaktan 1 tane var
+        ammoAmts[0] = 12; // pistolAmmo'dan 12 tane var
+        ammoAmts[1] = 2; // shotgunAmmo'dan 2 tane var
     }
 
     // Update is called once per frame
@@ -64,7 +67,7 @@ public class SaveScript : MonoBehaviour
                 if (itemAmts[i] > 0)
                 {
                     // i. indeksteki item'ın i. indeksteki değeri eğer 0'dan büyükse toplanmıştır.
-                    itemsPickedUp[i] = true; // i. indeksteki silah
+                    itemsPickedUp[i] = true; // i. indeksteki item
                 }
                 else if (itemAmts[i] == 0)
                 {
@@ -72,6 +75,21 @@ public class SaveScript : MonoBehaviour
                     itemsPickedUp[i] = false;
                 }
             }
+            /*
+                        for (int i = 0; i < ammoAmts.Length; i++)
+                        {
+                            if (ammoAmts[i] > 0)
+                            {
+                                // i. indeksteki merminin i. indeksteki değeri eğer 0'dan büyükse toplanmıştır.
+                                ammoPickedUp[i] = true; // i. indeksteki mermi
+                            }
+                            else if (ammoAmts[i] == 0)
+                            {
+                                // i. indeksteki mermi hiç toplanmamışsa
+                                ammoPickedUp[i] = false;
+                            }
+                        }
+                        */
         }
     }
 }

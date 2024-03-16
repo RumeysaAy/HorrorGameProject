@@ -14,9 +14,11 @@ public class PickupsScript : MonoBehaviour
     public Image mainImage; // ışının çarptığı silahın resminin koyulacağı yer
     public Sprite[] weaponIcons; // silahların resmi
     public Sprite[] itemIcons; // item'ların resmi
+    public Sprite[] ammoIcons; // mermilerin resmi
     public Text mainTitle; // ışının çarptığı silahın adının koyulacağı yer
     public string[] weaponTitles; // silahların adı
     public string[] itemTitles; //item'ların adı
+    public string[] ammoTitles; // mermilerin ismi
 
     private int objID = 0; // hangi silah türüne vurduğumuza bağlı değişecek (WeaponType.cs)
     private AudioSource audioPlayer;
@@ -65,7 +67,6 @@ public class PickupsScript : MonoBehaviour
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
                 }
-
                 // yalnızca item etiketi olan nesneleri tespit ettiğimden emin olmak istiyorum.
                 else if (hit.transform.gameObject.CompareTag("item")) // yalnızca bir item ise
                 {
@@ -92,8 +93,33 @@ public class PickupsScript : MonoBehaviour
                         // item'ı aldığımız için yok edeceğiz
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
+                }
+                // yalnızca ammo etiketi olan nesneleri tespit ettiğimden emin olmak istiyorum.
+                else if (hit.transform.gameObject.CompareTag("ammo")) // yalnızca bir ammo ise
+                {
+                    // ışının çarptığı nesne ammo ise panel açılsın (cephane/mermi)
+                    pickupPanel.SetActive(true);
+
+                    // hangi cephaneyi işaret ettiğimizi tespit edebilmek için AmmoType.cs dosyasını kullanacağız.
+                    objID = (int)hit.transform.gameObject.GetComponent<AmmoType>().chooseAmmo;
+                    // ışının çarptığı cephaneye bağlı olarak başlığın ve görselin değişmesi için
+                    mainImage.sprite = ammoIcons[objID];
+                    mainTitle.text = ammoTitles[objID];
 
 
+                    // e'ye bastığımızda mermiyi alacağız ve SaveScript.cs dosyasına mermiye sahip olduğumuzu kaydedeceğiz
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        // hangi mermi alınmışsa o merminin indeksindeki değer 1 olur
+                        SaveScript.ammoAmts[objID]++;
+
+                        audioPlayer.Play(); // mermi alındığında ses oynatılacak
+
+                        SaveScript.change = true; // mermi toplandığı için
+
+                        // mermiyi aldığımız için yok edeceğiz
+                        Destroy(hit.transform.gameObject, 0.2f);
+                    }
                 }
             }
             else
