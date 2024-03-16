@@ -10,8 +10,8 @@ public class SaveScript : MonoBehaviour
     public static bool[] weaponsPickedUp = new bool[8]; // toplanan/sahip olunan silahlar (hepsi default false)
     public static int itemID = 0;
     public static bool[] itemsPickedUp = new bool[13];
-    public static int[] weaponAmts = new int[8]; // alınan silahlar
-    public static int[] itemAmts = new int[13]; // alınan item'lar
+    public static int[] weaponAmts = new int[8]; // her silahtan kaç tane var?
+    public static int[] itemAmts = new int[13]; // her item'dan kaç tane var?
     public static bool change = false; // eğer silah toplandıysa true olur
 
     // Start is called before the first frame update
@@ -22,6 +22,10 @@ public class SaveScript : MonoBehaviour
 
         itemsPickedUp[0] = true; // el feneri toplandı mı?
         itemsPickedUp[1] = true; // gece görüşü toplandı mı?
+
+        itemAmts[0] = 1; // el fenerinden 1 tane var
+        itemAmts[1] = 1; // gece görüş gözlüğünden 1 tane var
+        weaponAmts[0] = 1; // bıçaktan 1 tane var
     }
 
     // Update is called once per frame

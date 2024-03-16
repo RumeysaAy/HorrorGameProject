@@ -12,6 +12,7 @@ public class WeaponInventory : MonoBehaviour
     public string[] descriptions;
     public Text description;
     public Button[] weaponButtons;
+    public Text amtsText; // silahtan kaç tane var
 
     private AudioSource audioPlayer;
     public AudioClip click, select;
@@ -61,7 +62,7 @@ public class WeaponInventory : MonoBehaviour
         }
 
         // hierarchy > Canvas > InventoryMenu > ItemsMenu > LighterButton >  OnClick() Lighter = 2
-        if (SaveScript.itemsPickedUp[2] == true ) // çakmak toplandı mı? sahip miyiz?
+        if (SaveScript.itemsPickedUp[2] == true) // çakmak toplandı mı? sahip miyiz?
         {
             combineItems[0].color = new Color(1, 1, 1, 1); // eğer sahipsek çakmak resmi alfa = 1
         }
@@ -71,7 +72,7 @@ public class WeaponInventory : MonoBehaviour
         }
 
         // hierarchy > Canvas > InventoryMenu > ItemsMenu > RagsButton >  OnClick() Rags = 3
-        if (SaveScript.itemsPickedUp[3] == true ) // // kumaş toplandı mı? sahip miyiz?
+        if (SaveScript.itemsPickedUp[3] == true) // // kumaş toplandı mı? sahip miyiz?
         {
             combineItems[1].color = new Color(1, 1, 1, 1); // eğer sahipsek kumaş resmi alfa = 1
         }
@@ -89,6 +90,7 @@ public class WeaponInventory : MonoBehaviour
         audioPlayer.clip = click;
         audioPlayer.Play();
         chosenWeaponNumber = weaponNumber;
+        amtsText.text = "Amount: " + SaveScript.weaponAmts[weaponNumber]; // miktar
 
         if (chosenWeaponNumber > 5) // 6(spray) ve 7(bottle)
         {
@@ -153,7 +155,7 @@ public class WeaponInventory : MonoBehaviour
 
         if (chosenWeaponNumber == 7) // seçilen silah bottle ise
         {
-            chosenWeaponNumber +=1; // 8. indeksteki silah olan bottleWithCloth kullanılsın
+            chosenWeaponNumber += 1; // 8. indeksteki silah olan bottleWithCloth kullanılsın
             SaveScript.weaponID = chosenWeaponNumber;
             // kumaş ve çakmak alınmıştır ve bottle seçilmiştir
             // birleştirirsek bottleWithCloth oluşturulur

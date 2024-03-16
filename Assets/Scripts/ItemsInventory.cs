@@ -13,6 +13,7 @@ public class ItemsInventory : MonoBehaviour
     public Text description;
     public Button[] itemButtons;
     public GameObject useButton;
+    public Text amtsText; // item'dan kaç tane var
 
     private AudioSource audioPlayer;
     public AudioClip click, select;
@@ -57,6 +58,7 @@ public class ItemsInventory : MonoBehaviour
         audioPlayer.clip = click;
         audioPlayer.Play();
         chosenItemNumber = itemNumber;
+        amtsText.text = "Amount: " + SaveScript.itemAmts[itemNumber]; // item'ın miktarı
 
         if (itemNumber < 4) // 0: el feneri, 1: gece görüşü, 2: çakmak, 3: kumaş
         {
