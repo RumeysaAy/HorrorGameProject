@@ -22,12 +22,16 @@ public class PickupsScript : MonoBehaviour
 
     private int objID = 0; // hangi silah türüne vurduğumuza bağlı değişecek (WeaponType.cs)
     private AudioSource audioPlayer;
+    public GameObject doorMessageObj; // mesajın görüntülenebilmesi için
+    public Text doorMessage; // e'ye tıklandığında kapının açılabileceğine dair mesaj
+    public AudioClip[] pickupSounds;
 
     // Start is called before the first frame update
     void Start()
     {
         pickupPanel.SetActive(false);
         audioPlayer = GetComponent<AudioSource>();
+        doorMessageObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -121,11 +125,49 @@ public class PickupsScript : MonoBehaviour
                         Destroy(hit.transform.gameObject, 0.2f);
                     }
                 }
+                // yalnızca door etiketi olan nesneleri tespit ettiğimden emin olmak istiyorum.
+                else if (hit.transform.gameObject.CompareTag("door")) // yalnızca bir kapı ise
+                {
+                    // hangi kapıyı işaret ettiğimizi tespit edebilmek için DoorType.cs dosyasını kullanacağız.
+                    objID = (int)hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
+
+                    // mesajı görünür hale getirelim
+                    doorMessageObj.SetActive(true);
+
+                    // mesaj
+                    doorMessage.text = hit.transform.gameObject.GetComponent<DoorType>().message;
+
+                    // e'ye bastığımızda kapı açılır
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        audioPlayer.clip = pickupSounds[objID];
+                        /*
+                            Creaking door (gıcırdayan kapı): dolaplar için ses
+                            Old door creaking (eski gıcırdayan kapı): ev için ses
+                            Large metal rusty door (büyük paslı metal kapı): kabin için ses
+                        */
+
+                        if (hit.transform.gameObject.GetComponent<DoorType>().opened == false)
+                        {
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to close the door";
+                            hit.transform.gameObject.GetComponent<DoorType>().opened = true;
+                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Open");
+                        }
+                        else if (hit.transform.gameObject.GetComponent<DoorType>().opened == true)
+                        {
+                            hit.transform.gameObject.GetComponent<DoorType>().message = "Press E to open the door";
+                            hit.transform.gameObject.GetComponent<DoorType>().opened = false;
+                            hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Close");
+                        }
+                        audioPlayer.Play(); // kapı açıldığında ses oynatılacak
+                    }
+                }
             }
             else
             {
                 // pickups katmanında fakat etiketi weapon olmayan nesne (item)
                 pickupPanel.SetActive(false);
+                doorMessageObj.SetActive(false);
             }
         }
         else
@@ -137,3 +179,4 @@ public class PickupsScript : MonoBehaviour
 }
 
 // bu dosya FirstPersonCharacter nesnesine bileşen olarak eklenmiştir.
+
