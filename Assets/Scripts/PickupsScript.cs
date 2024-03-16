@@ -63,6 +63,8 @@ public class PickupsScript : MonoBehaviour
                         // hangi silah alınmışsa o silahın indeksindeki değer 1 olur
                         SaveScript.weaponAmts[objID]++;
 
+                        audioPlayer.clip = pickupSounds[3];
+
                         audioPlayer.Play(); // silah alındığında ses oynatılacak
 
                         SaveScript.change = true; // silah toplandığı için
@@ -89,6 +91,8 @@ public class PickupsScript : MonoBehaviour
                     {
                         // hangi item alınmışsa o item'ın indeksindeki değer 1 olur
                         SaveScript.itemAmts[objID]++;
+
+                        audioPlayer.clip = pickupSounds[3];
 
                         audioPlayer.Play(); // item alındığında ses oynatılacak
 
@@ -117,6 +121,8 @@ public class PickupsScript : MonoBehaviour
                         // hangi mermi alınmışsa o merminin indeksindeki değer 1 olur
                         SaveScript.ammoAmts[objID]++;
 
+                        audioPlayer.clip = pickupSounds[3];
+
                         audioPlayer.Play(); // mermi alındığında ses oynatılacak
 
                         SaveScript.change = true; // mermi toplandığı için
@@ -141,6 +147,7 @@ public class PickupsScript : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         audioPlayer.clip = pickupSounds[objID];
+                        audioPlayer.Play(); // kapı açıldığında ses oynatılacak
                         /*
                             Creaking door (gıcırdayan kapı): dolaplar için ses
                             Old door creaking (eski gıcırdayan kapı): ev için ses
@@ -159,7 +166,6 @@ public class PickupsScript : MonoBehaviour
                             hit.transform.gameObject.GetComponent<DoorType>().opened = false;
                             hit.transform.gameObject.GetComponent<Animator>().SetTrigger("Close");
                         }
-                        audioPlayer.Play(); // kapı açıldığında ses oynatılacak
                     }
                 }
             }
