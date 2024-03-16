@@ -75,21 +75,6 @@ public class SaveScript : MonoBehaviour
                     itemsPickedUp[i] = false;
                 }
             }
-            /*
-                        for (int i = 0; i < ammoAmts.Length; i++)
-                        {
-                            if (ammoAmts[i] > 0)
-                            {
-                                // i. indeksteki merminin i. indeksteki değeri eğer 0'dan büyükse toplanmıştır.
-                                ammoPickedUp[i] = true; // i. indeksteki mermi
-                            }
-                            else if (ammoAmts[i] == 0)
-                            {
-                                // i. indeksteki mermi hiç toplanmamışsa
-                                ammoPickedUp[i] = false;
-                            }
-                        }
-                        */
         }
     }
 }
