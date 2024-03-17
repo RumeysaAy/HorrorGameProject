@@ -40,7 +40,7 @@ public class PickupsScript : MonoBehaviour
         // oyuncunun bir şeye çarpıp çarpmadığını tespit etmek için sürekli olarak bu ışını dünyaya fırlatmasını istiyoruz
         // ışının sonunda, çizginin sonunda ve herhangi bir yerde bir küre çizer. o kürenin çarptığı şey daha sonra tespit edilir.
         // oyuncunun konumu, yarıçap, dünyada ileriye doğru hareket etsin, ne vuruldu?, max ne kadar ileri gitsin?, seçilen katman dışındakiler(~)
-        if (Physics.SphereCast(transform.position, 0.5f, transform.forward, out hit, 30, ~excludeLayers)) // Pickups Layer'ındaki bir nesneye çarpıp çarpmadığını tespit edelim.
+        if (Physics.SphereCast(transform.position, 0.3f, transform.forward, out hit, 30, ~excludeLayers)) // Pickups Layer'ındaki bir nesneye çarpıp çarpmadığını tespit edelim.
         {
             // oyuncunun konumu ile vurulan nesnenin konumu arasındaki mesafe 8'den küçükse ise panel açılsın
             if (Vector3.Distance(transform.position, hit.transform.position) < pickupDisplayDistance)
