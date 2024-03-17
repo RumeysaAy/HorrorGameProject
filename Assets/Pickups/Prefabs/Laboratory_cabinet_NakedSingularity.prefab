@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95a6c447cb9704d9fbde49fd66a6235d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 457.2
+      value: 457.22913
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95a6c447cb9704d9fbde49fd66a6235d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.21
+      value: 27.140673
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95a6c447cb9704d9fbde49fd66a6235d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 165.37506
+      value: 169.02077
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 95a6c447cb9704d9fbde49fd66a6235d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chooseDoor: 0
-  opened: 1
+  opened: 0
   locked: 0
   message: Press E to open the door
 --- !u!95 &2752297438937044314

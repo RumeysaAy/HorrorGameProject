@@ -137,14 +137,20 @@ public class PickupsScript : MonoBehaviour
                     // hangi kapıyı işaret ettiğimizi tespit edebilmek için DoorType.cs dosyasını kullanacağız.
                     objID = (int)hit.transform.gameObject.GetComponent<DoorType>().chooseDoor;
 
+                    // eğer kapı kilitliyse ihtiyacımız olan anahtarı yazdırır
+                    if (hit.transform.gameObject.GetComponent<DoorType>().locked == true)
+                    {
+                        hit.transform.gameObject.GetComponent<DoorType>().message = "Locked. You need to use the " + hit.transform.gameObject.GetComponent<DoorType>().chooseDoor + " key!";
+                    }
+
                     // mesajı görünür hale getirelim
                     doorMessageObj.SetActive(true);
 
                     // mesaj
                     doorMessage.text = hit.transform.gameObject.GetComponent<DoorType>().message;
 
-                    // e'ye bastığımızda kapı açılır
-                    if (Input.GetKeyDown(KeyCode.E))
+                    // e'ye bastığımızda eğer kapı kilitli değilse açılır
+                    if (Input.GetKeyDown(KeyCode.E) && hit.transform.gameObject.GetComponent<DoorType>().locked == false)
                     {
                         audioPlayer.clip = pickupSounds[objID];
                         audioPlayer.Play(); // kapı açıldığında ses oynatılacak
