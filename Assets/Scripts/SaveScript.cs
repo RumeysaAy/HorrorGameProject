@@ -14,6 +14,9 @@ public class SaveScript : MonoBehaviour
     public static int[] itemAmts = new int[13]; // her item'dan kaç tane var?
     public static int[] ammoAmts = new int[2]; // her mermiden kaç tane var?
     public static bool change = false; // eğer silah toplandıysa true olur
+    public static int[] currentAmmo = new int[9]; // O andaki tabancanın ve tüfeğin içerisindeki mermi sayısı
+    // Toplamda 9 silah var, bunlar arasında şişe ve kumaş da bulunuyor
+    // 4'te tabanca ve 5'te tüfek bulunuyor
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,15 @@ public class SaveScript : MonoBehaviour
         weaponAmts[0] = 1; // bıçaktan 1 tane var
         ammoAmts[0] = 12; // pistolAmmo'dan 12 tane var
         ammoAmts[1] = 2; // shotgunAmmo'dan 2 tane var
+
+        // ilk başladığımda mermim olmadığından olayı sıfıra eşitledim
+        for (int i = 0; i < currentAmmo.Length; i++)
+        {
+            // yakın dövüş silahlarının mermisi olmaz
+            currentAmmo[i] = 2;
+        }
+
+        currentAmmo[4] = 12; // tabancanın içerisindeki mermi sayısı
     }
 
     // Update is called once per frame
@@ -78,3 +90,21 @@ public class SaveScript : MonoBehaviour
         }
     }
 }
+
+/*
+WeaponManager.cs
+
+    // arms@knife > Weapons
+    public enum weaponSelect
+    {
+        knife, // 0
+        cleaver, // 1
+        bat, // 2
+        axe, // 3
+        pistol, // 4
+        shotgun, // 5
+        sprayCan, // 6
+        bottle, // 7
+        bottleWithCloth // 8
+    }
+*/

@@ -67,9 +67,34 @@ public class WeaponManager : MonoBehaviour
         {
             if (SaveScript.inventoryOpen == false)
             {
-                anim.SetTrigger("Attack"); // saldırı animasyonu
-                audioPlayer.clip = weaponSounds[SaveScript.weaponID]; // ses
-                audioPlayer.Play();
+                // SaveScript.weaponID -> şu anda kullanılan silah
+                if (SaveScript.currentAmmo[SaveScript.weaponID] > 0) // kullanılan silahın içerisindeki mermi sayısı > 0
+                {
+                    // kullanılan silahın içerisinde mermi varsa saldırsın
+                    anim.SetTrigger("Attack"); // saldırı animasyonu
+                    audioPlayer.clip = weaponSounds[SaveScript.weaponID]; // ses
+                    audioPlayer.Play();
+
+                    // yakın dövüş silahlarının mermisi olmadığından mermi sayısını azaltmıyorum
+
+                    // kullanılan silah tabanca veya tüfek ise
+                    if (SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
+                    {
+                        // saldırıda mermi kullanıldığı için kullanılan silahın içerisindeki mermi sayısı azaltılır
+                        SaveScript.currentAmmo[SaveScript.weaponID]--;
+                    }
+                }
+                else
+                {
+                    // kullanılan silah tabanca veya tüfek ise
+                    if (SaveScript.weaponID == 4 || SaveScript.weaponID == 5)
+                    {
+                        // eğer şu anda kullanılan tabancanın veya tüfeğin mermisi bittiyse
+                        // ses efektini değiştireceğim
+                        audioPlayer.clip = weaponSounds[9];
+                        audioPlayer.Play();
+                    }
+                }
             }
         }
     }
