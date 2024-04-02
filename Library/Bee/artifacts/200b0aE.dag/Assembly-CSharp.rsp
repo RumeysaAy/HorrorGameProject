@@ -381,6 +381,7 @@
 "Assets/Scripts/UIScale.cs"
 "Assets/Scripts/WeaponInventory.cs"
 "Assets/Scripts/WeaponManager.cs"
+"Assets/Scripts/WeaponsUIManager.cs"
 "Assets/Scripts/WeaponType.cs"
 "Assets/UnityTechnologies/EffectExamples/Shared/Scripts/DecalDestroyer.cs"
 "Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ExtinguishableFire.cs"
