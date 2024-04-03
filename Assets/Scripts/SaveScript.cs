@@ -41,6 +41,9 @@ public class SaveScript : MonoBehaviour
         }
 
         currentAmmo[4] = 12; // tabancanın içerisindeki mermi sayısı
+
+        // sadece sol tuşa basılı tuttuğumda çalışması için spreyin mermi sayısını sıfırladım
+        currentAmmo[6] = 0;
     }
 
     // Update is called once per frame

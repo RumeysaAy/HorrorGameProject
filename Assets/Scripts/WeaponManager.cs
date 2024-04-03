@@ -26,6 +26,7 @@ public class WeaponManager : MonoBehaviour
     private AudioSource audioPlayer;
     public AudioClip[] weaponSounds;
     private int currentWeaponID;
+    private bool spraySoundOn = false; // spray kullanıldığı sırada ses efektini açmak için
 
     // Start is called before the first frame update
     void Start()
@@ -95,6 +96,41 @@ public class WeaponManager : MonoBehaviour
                         audioPlayer.Play();
                     }
                 }
+            }
+        }
+
+        // eğer sol tuşa basılı tutuluyorsa
+        if (Input.GetMouseButton(0))
+        {
+            // eğer sprey kullanılıyorsa
+            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
+            {
+                if (spraySoundOn == false) // spray action durumuna her karede geçilmemesi için
+                {
+                    // saldırı animasyonu sadece bir defa oynatılmış olacak
+                    spraySoundOn = true;
+
+                    // Attack parametresi ile spray action durumuna geçilir.
+                    anim.SetTrigger("Attack");
+                    audioPlayer.clip = weaponSounds[SaveScript.weaponID];
+                    audioPlayer.Play();
+                    audioPlayer.loop = true;
+                }
+            }
+        }
+
+        // eğer sol tuşa basılı tutmayı bıraktığım anda
+        if (Input.GetMouseButtonUp(0))
+        {
+            // eğer sprey kullanılıyorsa
+            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
+            {
+                // Release parametresi ile spray return durumuna geçilir
+                anim.SetTrigger("Release");
+
+                // saldırı durumundan yani spray action durumundan çıktığı için
+                spraySoundOn = false;
+                audioPlayer.loop = false;
             }
         }
     }

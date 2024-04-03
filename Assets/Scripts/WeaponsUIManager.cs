@@ -43,6 +43,18 @@ public class WeaponsUIManager : MonoBehaviour
             }
         }
 
+        // Spreyi kullandığımda sprey paneli açılsın
+        if (SaveScript.weaponID == 6) // eğer seçilen silah spreyse
+        {
+            if (panelOn == false) // panel kapalıysa
+            {
+                panelOn = true; // panel açılsın
+
+                // sprey paneli gözüksün
+                sprayPanel.SetActive(true);
+            }
+        }
+
         if (SaveScript.inventoryOpen == true)
         {
             // inventory paneli açıksa hepsini kapat
