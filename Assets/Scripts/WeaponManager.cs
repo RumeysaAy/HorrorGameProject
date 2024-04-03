@@ -27,6 +27,7 @@ public class WeaponManager : MonoBehaviour
     public AudioClip[] weaponSounds;
     private int currentWeaponID;
     private bool spraySoundOn = false; // spray kullanıldığı sırada ses efektini açmak için
+    public GameObject sprayPanel; // sprey bittiyse kullanılmasını engelleyeceğim
 
     // Start is called before the first frame update
     void Start()
@@ -99,8 +100,8 @@ public class WeaponManager : MonoBehaviour
             }
         }
 
-        // eğer sol tuşa basılı tutuluyorsa
-        if (Input.GetMouseButton(0))
+        // eğer sol tuşa basılı tutuluyorsa ve sprey bitmediyse
+        if (Input.GetMouseButton(0) && sprayPanel.GetComponent<SprayScript>().sprayAmount > 0.0f)
         {
             // eğer sprey kullanılıyorsa
             if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
@@ -112,15 +113,15 @@ public class WeaponManager : MonoBehaviour
 
                     // Attack parametresi ile spray action durumuna geçilir.
                     anim.SetTrigger("Attack");
-                    audioPlayer.clip = weaponSounds[SaveScript.weaponID];
-                    audioPlayer.Play();
-                    audioPlayer.loop = true;
+
+                    // ses
+                    StartCoroutine(StartSpraySound());
                 }
             }
         }
 
-        // eğer sol tuşa basılı tutmayı bıraktığım anda
-        if (Input.GetMouseButtonUp(0))
+        // eğer sol tuşa basılı tutmayı bıraktığım anda veya sprey bittiyse
+        if (Input.GetMouseButtonUp(0) || sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
         {
             // eğer sprey kullanılıyorsa
             if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
@@ -130,6 +131,9 @@ public class WeaponManager : MonoBehaviour
 
                 // saldırı durumundan yani spray action durumundan çıktığı için
                 spraySoundOn = false;
+
+                // Spreyi kullanmadığım zaman yani sola basılı tutmayı bıraktığım an ses dursun
+                audioPlayer.Stop();
                 audioPlayer.loop = false;
             }
         }
@@ -188,6 +192,14 @@ public class WeaponManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f); // animasyonu bitirmesi için gereken zaman
         anim.SetBool("weaponChanged", false);
+    }
+
+    IEnumerator StartSpraySound()
+    {
+        yield return new WaitForSeconds(0.3f);
+        audioPlayer.clip = weaponSounds[SaveScript.weaponID];
+        audioPlayer.Play();
+        audioPlayer.loop = true;
     }
 }
 
