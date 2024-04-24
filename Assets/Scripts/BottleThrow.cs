@@ -9,7 +9,18 @@ public class BottleThrow : MonoBehaviour
     public GameObject bottleObj; // fırlatılacak şişe nesnesi
     public Transform throwPoint; // atış noktası (şişenin fırlatılacağı nokta)
 
-    // Update is called once per frame
+    LineRenderer line;
+    public int linePoints = 75; // çizgi noktaları sayısı
+    // nokta sayısı arttıkça eğri o kadar düzgün olur fakat kare hızı yavaşlar
+    public float pointDistance = 0.03f; // bu çizgi noktalarının her biri arasındaki mesafe
+    public LayerMask collideLayer; // çizginin çarpışacağı nesnenin katmanı
+    public Material mBlue, mRed; // şişe için mavi, molotof kokteyli için kırmızı
+
+    void Start()
+    {
+        line = GetComponent<LineRenderer>();
+    }
+
     void Update()
     {
         // fırlatılacak olan şişenin rotasyonunun hesaplanması
@@ -27,7 +38,7 @@ public class BottleThrow : MonoBehaviour
         {
             if (throwPower < 70)
             {
-                throwPower += 6 * Time.deltaTime;
+                throwPower += 6 * Time.deltaTime; // atış gücü artar
             }
         }
 
@@ -36,8 +47,48 @@ public class BottleThrow : MonoBehaviour
         {
             if (throwPower > 20)
             {
-                throwPower -= 12 * Time.deltaTime;
+                throwPower -= 12 * Time.deltaTime; // atış gücü azalır
             }
+        }
+
+        // Karakterin sağ kolunun arkasındaki boş oyun nesnesinden doğrudan ileri doğru bir çizgi çekilecek. 
+        // Bu çizgi throwPower’a bağlı olarak büyüyebilir veya küçülebilir.
+
+        line.positionCount = linePoints; // çizgi noktaları sayısı
+        List<Vector3> points = new List<Vector3>(); // çizgi noktalarının konumu
+        Vector3 startPos = throwPoint.position; // çizginin başlangıç noktası
+        // fareyi nasıl hareket ettirdiğime bağlı olarak “throwPower” artar veya azalır.
+        // başlangıç hızı = başlangıç noktasının ileri yönü * throwPower
+        Vector3 startVelocity = throwPoint.forward * throwPower; // başlangıç hızı
+
+        // Çizgi yalnızca farenin sağ tuşuna bastığım sürece oluşturulsun
+        if (Input.GetMouseButton(1))
+        {
+            // toplam "linePoints" nokta var ve her iki noktanın arasında "pointDistance" birim fark var
+            for (float i = 0; i < linePoints; i += pointDistance)
+            {
+                Vector3 newPoint = startPos + i * startVelocity;
+                newPoint.y = startPos.y + startVelocity.y + i + Physics.gravity.y / 2f * i * i;
+                points.Add(newPoint); // oluşturulan eğrinin noktaları
+
+                // oluşan eğri eğer bir nesneye çarptıysa çizimi durdurmalıyım
+                // o noktadaki küre, yarıçapı, belirlenen katmandaki nesnelerden birisine çarptıysa
+                // Ne zaman vurulan bir şey olsa, bu bir diziye eklenecek. Yani eğer uzunluk sıfırdan büyükse bir nesneyle çarpıştığını gösterir.
+                if (Physics.OverlapSphere(newPoint, 0.01f, collideLayer).Length > 0)
+                {
+                    // eğrideki konum sayısı, nokta sayısına eşitlenir.
+                    line.positionCount = points.Count;
+                    break;
+                }
+            }
+            // eğri oluşturulacak ve görüntülenecek
+            line.SetPositions(points.ToArray());
+        }
+        // sağ fare düğmemi bıraktığımda
+        if (Input.GetMouseButtonUp(1))
+        {
+            // çizim dursun
+            line.positionCount = 0; // toplam konum sayısı sıfırlanır
         }
     }
 }
