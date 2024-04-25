@@ -23,85 +23,95 @@ public class BottleThrow : MonoBehaviour
 
     void Update()
     {
-        // fırlatılacak olan şişenin rotasyonunun hesaplanması
-
-        float HorizontalRotation = Input.GetAxis("Mouse X") * 2;
-        float VerticalRotation = Input.GetAxis("Mouse Y") * 2;
-        // çizgiyi kamerayla aynı hizada tutacak. Bu yapılmazsa oluşturulan çizgi dünyada kalacak ve etrafta hareket etmeyecek.
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, HorizontalRotation * rotationSpeed, VerticalRotation * rotationSpeed));
-
-        // Farenin yukarı veya aşağı hareket ettirilmesine bağlı olarak mesafenin ayarlanması
-        // atış mesafesinin kontrol edilmesi
-
-        // fareyi ileriye doğru hareket ettirdiğimde
-        if (Input.GetAxis("Mouse Y") > 0)
+        // eğer envanter menüsü açık değilse
+        if (SaveScript.inventoryOpen == false)
         {
-            if (throwPower < 70)
+            // fırlatılacak olan şişenin rotasyonunun hesaplanması
+
+            float HorizontalRotation = Input.GetAxis("Mouse X") * 2;
+            float VerticalRotation = Input.GetAxis("Mouse Y") * 2;
+            // çizgiyi kamerayla aynı hizada tutacak. Bu yapılmazsa oluşturulan çizgi dünyada kalacak ve etrafta hareket etmeyecek.
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, HorizontalRotation * rotationSpeed, VerticalRotation * rotationSpeed));
+
+            // Farenin yukarı veya aşağı hareket ettirilmesine bağlı olarak mesafenin ayarlanması
+            // atış mesafesinin kontrol edilmesi
+
+            // fareyi ileriye doğru hareket ettirdiğimde
+            if (Input.GetAxis("Mouse Y") > 0)
             {
-                throwPower += 6 * Time.deltaTime; // atış gücü artar
-            }
-        }
-
-        // fareyi geriye doğru hareket ettirdiğimde
-        if (Input.GetAxis("Mouse Y") < 0)
-        {
-            if (throwPower > 20)
-            {
-                throwPower -= 12 * Time.deltaTime; // atış gücü azalır
-            }
-        }
-
-        // Karakterin sağ kolunun arkasındaki boş oyun nesnesinden doğrudan ileri doğru bir çizgi çekilecek. 
-        // Bu çizgi throwPower’a bağlı olarak büyüyebilir veya küçülebilir.
-
-        line.positionCount = linePoints; // çizgi noktaları sayısı
-        List<Vector3> points = new List<Vector3>(); // çizgi noktalarının konumu
-        Vector3 startPos = throwPoint.position; // çizginin başlangıç noktası
-        // fareyi nasıl hareket ettirdiğime bağlı olarak “throwPower” artar veya azalır.
-        // başlangıç hızı = başlangıç noktasının ileri yönü * throwPower
-        Vector3 startVelocity = throwPoint.forward * throwPower; // başlangıç hızı
-
-        // Çizgi yalnızca farenin sağ tuşuna bastığım sürece oluşturulsun
-        if (Input.GetMouseButton(1))
-        {
-            // toplam "linePoints" nokta var ve her iki noktanın arasında "pointDistance" birim fark var
-            for (float i = 0; i < linePoints; i += pointDistance)
-            {
-                Vector3 newPoint = startPos + i * startVelocity;
-                newPoint.y = startPos.y + startVelocity.y + i + Physics.gravity.y / 2f * i * i;
-                points.Add(newPoint); // oluşturulan eğrinin noktaları
-
-                // oluşan eğri eğer bir nesneye çarptıysa çizimi durdurmalıyım
-                // o noktadaki küre, yarıçapı, belirlenen katmandaki nesnelerden birisine çarptıysa
-                // Ne zaman vurulan bir şey olsa, bu bir diziye eklenecek. Yani eğer uzunluk sıfırdan büyükse bir nesneyle çarpıştığını gösterir.
-                if (Physics.OverlapSphere(newPoint, 0.01f, collideLayer).Length > 0)
+                if (throwPower < 70)
                 {
-                    // eğrideki konum sayısı, nokta sayısına eşitlenir.
-                    line.positionCount = points.Count;
-                    break;
+                    throwPower += 6 * Time.deltaTime; // atış gücü artar
                 }
             }
-            // eğri oluşturulacak ve görüntülenecek
-            line.SetPositions(points.ToArray());
-        }
-        // sağ fare düğmemi bıraktığımda
-        if (Input.GetMouseButtonUp(1))
-        {
-            // çizim dursun
-            line.positionCount = 0; // toplam konum sayısı sıfırlanır
-        }
 
-        // true ise boş şişe atılır
-        if (WeaponManager.emptyBottleThrow == true)
-        {
-            // her şey bir animasyon tarafından yönlendiriliyor.
+            // fareyi geriye doğru hareket ettirdiğimde
+            if (Input.GetAxis("Mouse Y") < 0)
+            {
+                if (throwPower > 20)
+                {
+                    throwPower -= 12 * Time.deltaTime; // atış gücü azalır
+                }
+            }
 
-            WeaponManager.emptyBottleThrow = false; // yeni şişe için false
+            // Karakterin sağ kolunun arkasındaki boş oyun nesnesinden doğrudan ileri doğru bir çizgi çekilecek. 
+            // Bu çizgi throwPower’a bağlı olarak büyüyebilir veya küçülebilir.
 
-            // atılacak olan şişe, fırlatma başlangıç noktasında oluşturulsun
-            GameObject createBottle = Instantiate(bottleObj, throwPoint.position, throwPoint.rotation);
-            // şişeye kuvvet uygulamak için rigidbody'ye ulaşmam lazım
-            createBottle.GetComponentInChildren<Rigidbody>().velocity = throwPoint.transform.forward * throwPower;
+            line.positionCount = linePoints; // çizgi noktaları sayısı
+            List<Vector3> points = new List<Vector3>(); // çizgi noktalarının konumu
+            Vector3 startPos = throwPoint.position; // çizginin başlangıç noktası
+                                                    // fareyi nasıl hareket ettirdiğime bağlı olarak “throwPower” artar veya azalır.
+                                                    // başlangıç hızı = başlangıç noktasının ileri yönü * throwPower
+            Vector3 startVelocity = throwPoint.forward * throwPower; // başlangıç hızı
+
+            // Çizgi yalnızca farenin sağ tuşuna bastığım sürece oluşturulsun
+            if (Input.GetMouseButton(1))
+            {
+                // toplam "linePoints" nokta var ve her iki noktanın arasında "pointDistance" birim fark var
+                for (float i = 0; i < linePoints; i += pointDistance)
+                {
+                    Vector3 newPoint = startPos + i * startVelocity;
+                    newPoint.y = startPos.y + startVelocity.y + i + Physics.gravity.y / 2f * i * i;
+                    points.Add(newPoint); // oluşturulan eğrinin noktaları
+
+                    // oluşan eğri eğer bir nesneye çarptıysa çizimi durdurmalıyım
+                    // o noktadaki küre, yarıçapı, belirlenen katmandaki nesnelerden birisine çarptıysa
+                    // Ne zaman vurulan bir şey olsa, bu bir diziye eklenecek. Yani eğer uzunluk sıfırdan büyükse bir nesneyle çarpıştığını gösterir.
+                    if (Physics.OverlapSphere(newPoint, 0.01f, collideLayer).Length > 0)
+                    {
+                        // eğrideki konum sayısı, nokta sayısına eşitlenir.
+                        line.positionCount = points.Count;
+                        break;
+                    }
+                }
+                // eğri oluşturulacak ve görüntülenecek
+                line.SetPositions(points.ToArray());
+            }
+            // sağ fare düğmemi bıraktığımda
+            if (Input.GetMouseButtonUp(1))
+            {
+                // çizim dursun
+                line.positionCount = 0; // toplam konum sayısı sıfırlanır
+            }
+
+            // true ise boş şişe atılır
+            if (WeaponManager.emptyBottleThrow == true)
+            {
+                // her şey bir animasyon tarafından yönlendiriliyor.
+
+                WeaponManager.emptyBottleThrow = false; // yeni şişe için false
+
+                // atılacak olan şişe, fırlatma başlangıç noktasında oluşturulsun
+                GameObject createBottle = Instantiate(bottleObj, throwPoint.position, throwPoint.rotation);
+                // şişeye kuvvet uygulamak için rigidbody'ye ulaşmam lazım
+                createBottle.GetComponentInChildren<Rigidbody>().velocity = throwPoint.transform.forward * throwPower;
+
+                // Boş şişeyi attığımda, toplam topladığım boş şişe miktarını bir eksiltmeliyim.
+                SaveScript.weaponAmts[7]--;
+
+                // savescript.cs’de toplam topladığım boş şişe miktarını güncellemem gerekiyor
+                SaveScript.change = true; // bu yüzden true'ya eşitledim
+            }
         }
     }
 }

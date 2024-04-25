@@ -203,6 +203,15 @@ public class WeaponManager : MonoBehaviour
         fireBottleThrow = true;
     }
 
+    // var olan diğer bir şişeyi veya molotof kokteylini kullanmak için
+    public void LoadAnotherBottle()
+    {
+        if (SaveScript.weaponID == 7 || SaveScript.weaponID == 8)
+        {
+            ChangeWeapons();
+        }
+    }
+
     IEnumerator WeaponReset()
     {
         yield return new WaitForSeconds(0.5f); // animasyonu bitirmesi için gereken zaman

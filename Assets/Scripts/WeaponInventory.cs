@@ -80,6 +80,12 @@ public class WeaponInventory : MonoBehaviour
         {
             combineItems[1].color = new Color(1, 1, 1, 0.06f); // resim alfa = 0.06 soluklaşır
         }
+
+        // Seçilen silahın miktarı sıfırsa bıçak kullanılsın
+        if (SaveScript.weaponAmts[chosenWeaponNumber] < 1)
+        {
+            ChooseWeapon(0);
+        }
     }
 
     public void ChooseWeapon(int weaponNumber)
@@ -87,8 +93,11 @@ public class WeaponInventory : MonoBehaviour
         bigIcon.sprite = bigIcons[weaponNumber];
         title.text = titles[weaponNumber];
         description.text = descriptions[weaponNumber];
-        audioPlayer.clip = click;
-        audioPlayer.Play();
+        if (audioPlayer != null)
+        {
+            audioPlayer.clip = click;
+            audioPlayer.Play();
+        }
         chosenWeaponNumber = weaponNumber;
         amtsText.text = "Amount: " + SaveScript.weaponAmts[weaponNumber]; // miktar
 
