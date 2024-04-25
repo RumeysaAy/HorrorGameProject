@@ -9,6 +9,10 @@ public class BottleSmash : MonoBehaviour
     private bool playSound = false;
     public GameObject bottleParent;
 
+    // molotof kokteyli için
+    public bool flames = false;
+    public GameObject explosion; // çarptığı nesnede bu efekti oluşturacağım
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,12 @@ public class BottleSmash : MonoBehaviour
             rb.isKinematic = true; // şişe çarptığı yerde kalacak
             // bu dosyanın bulunduğu nesnenin parent nesnesini yok edeceğim
             Destroy(bottleParent, 3); // 3 saniye sonra
+        }
+
+        if (flames == true)
+        {
+            // molotof kokteylinin çarptığı nesnede efekt oluşturdum
+            Instantiate(explosion, this.transform.position, this.transform.rotation);
         }
     }
 }
