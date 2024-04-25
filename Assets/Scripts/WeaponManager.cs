@@ -28,6 +28,8 @@ public class WeaponManager : MonoBehaviour
     private int currentWeaponID;
     private bool spraySoundOn = false; // spray kullanıldığı sırada ses efektini açmak için
     public GameObject sprayPanel; // sprey bittiyse kullanılmasını engelleyeceğim
+    public static bool emptyBottleThrow = false; // boş şişeyi fırlatmak için bunu çağıracağım
+    public static bool fireBottleThrow = false; // molotof kokteylini fırlatmak için bunu çağıracağım
 
     // Start is called before the first frame update
     void Start()
@@ -186,6 +188,19 @@ public class WeaponManager : MonoBehaviour
                 transform.localPosition = new Vector3(0.02f, -0.193f, 0.66f);
                 break;
         }
+    }
+
+    // Boş şişe fırlatma (ThrowingEmptyBottle) animasyonunun 2.saniyesinde BottleThrowEmpty() fonksiyonu çalıştırılacak.
+    public void BottleThrowEmpty()
+    {
+        // boş şişe atılsın
+        emptyBottleThrow = true; // WeaponManager’daki if bloğu çalıştırılır
+    }
+
+    public void BottleThrowFire()
+    {
+        // molotof kokteyli atılsın
+        fireBottleThrow = true;
     }
 
     IEnumerator WeaponReset()

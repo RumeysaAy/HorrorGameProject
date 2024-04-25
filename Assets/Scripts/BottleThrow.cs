@@ -91,17 +91,17 @@ public class BottleThrow : MonoBehaviour
             line.positionCount = 0; // toplam konum sayısı sıfırlanır
         }
 
-        // sol fare düğmesine tıkladığımda
-        if (Input.GetMouseButtonDown(0))
+        // true ise boş şişe atılır
+        if (WeaponManager.emptyBottleThrow == true)
         {
-            // eğer silah olarak şişe seçiliyse
-            if (SaveScript.weaponID == 7)
-            {
-                // atılacak olan şişe, fırlatma başlangıç noktasında oluşturulsun
-                GameObject createBottle = Instantiate(bottleObj, throwPoint.position, throwPoint.rotation);
-                // şişeye kuvvet uygulamak için rigidbody'ye ulaşmam lazım
-                createBottle.GetComponentInChildren<Rigidbody>().velocity = throwPoint.transform.forward * throwPower;
-            }
+            // her şey bir animasyon tarafından yönlendiriliyor.
+
+            WeaponManager.emptyBottleThrow = false; // yeni şişe için false
+
+            // atılacak olan şişe, fırlatma başlangıç noktasında oluşturulsun
+            GameObject createBottle = Instantiate(bottleObj, throwPoint.position, throwPoint.rotation);
+            // şişeye kuvvet uygulamak için rigidbody'ye ulaşmam lazım
+            createBottle.GetComponentInChildren<Rigidbody>().velocity = throwPoint.transform.forward * throwPower;
         }
     }
 }
