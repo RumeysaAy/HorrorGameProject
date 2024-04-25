@@ -12,6 +12,7 @@ public class LookMode : MonoBehaviour
     public GameObject nightVisionOverlay; // gece görüş UI
     public GameObject flashLightOverlay; // el feneri UI
     public GameObject inventoryMenu; // UI (canva)
+    public GameObject combinePanel;
     private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
     private bool flashLightOn = false;
@@ -102,7 +103,9 @@ public class LookMode : MonoBehaviour
             }
             else if (SaveScript.inventoryOpen == true)
             {
+                // envanter açıksa ı'ye tıklayıp kapatacağım.
                 vol.profile = standard;
+                combinePanel.SetActive(false); // UI
                 inventoryMenu.SetActive(false); // UI
             }
         }

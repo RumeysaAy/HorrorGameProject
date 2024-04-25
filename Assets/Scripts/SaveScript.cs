@@ -7,10 +7,10 @@ public class SaveScript : MonoBehaviour
 {
     public static bool inventoryOpen = false;
     public static int weaponID = 0; // WeaponInventory.cs dosyasının erişmesi gerekiyor. UI'den silahı değiştirmek için gerekli
-    public static bool[] weaponsPickedUp = new bool[8]; // toplanan/sahip olunan silahlar (hepsi default false)
+    public static bool[] weaponsPickedUp = new bool[9]; // toplanan/sahip olunan silahlar (hepsi default false)
     public static int itemID = 0;
     public static bool[] itemsPickedUp = new bool[13];
-    public static int[] weaponAmts = new int[8]; // her silahtan kaç tane var?
+    public static int[] weaponAmts = new int[9]; // her silahtan kaç tane var?
     public static int[] itemAmts = new int[13]; // her item'dan kaç tane var?
     public static int[] ammoAmts = new int[2]; // her mermiden kaç tane var?
     public static bool change = false; // eğer silah toplandıysa true olur

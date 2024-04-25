@@ -7,6 +7,7 @@ public class BottleThrow : MonoBehaviour
     public float rotationSpeed = 0.5f; // dönüş hızı
     public float throwPower = 40f; // fırlatma gücü (şişeyi fırlatmak için uygulanan güç)
     public GameObject bottleObj; // fırlatılacak şişe nesnesi
+    public GameObject fireBottleObj; // fırlatılacak molotof kokteyli nesnesi
     public Transform throwPoint; // atış noktası (şişenin fırlatılacağı nokta)
 
     LineRenderer line;
@@ -23,8 +24,8 @@ public class BottleThrow : MonoBehaviour
 
     void Update()
     {
-        // eğer envanter menüsü açık değilse
-        if (SaveScript.inventoryOpen == false)
+        // eğer envanter menüsü açık değilse ve şişe(7) veya molotof kokteyli(8) seçiliyse
+        if (SaveScript.inventoryOpen == false && SaveScript.weaponID > 6)
         {
             // fırlatılacak olan şişenin rotasyonunun hesaplanması
 
@@ -110,6 +111,26 @@ public class BottleThrow : MonoBehaviour
                 SaveScript.weaponAmts[7]--;
 
                 // savescript.cs’de toplam topladığım boş şişe miktarını güncellemem gerekiyor
+                SaveScript.change = true; // bu yüzden true'ya eşitledim
+            }
+
+            // true ise molotof kokteyli atılır
+            if (WeaponManager.fireBottleThrow == true)
+            {
+                // her şey bir animasyon tarafından yönlendiriliyor.
+
+                WeaponManager.fireBottleThrow = false; // yeni bir molotof kokteyli için false
+
+                // atılacak olan molotof kokteyli, fırlatma başlangıç noktasında oluşturulsun
+                GameObject createBottle = Instantiate(fireBottleObj, throwPoint.position, throwPoint.rotation);
+                // molotof kokteyline kuvvet uygulamak için rigidbody'ye ulaşmam lazım
+                createBottle.GetComponentInChildren<Rigidbody>().velocity = throwPoint.transform.forward * throwPower;
+
+                // molotof kokteyli attığımda, toplam topladığım şişe miktarını bir eksiltmeliyim.
+                // molotof kokteyli şişe ve kumaştan oluşur
+                SaveScript.weaponAmts[7]--;
+
+                // savescript.cs’de toplam topladığım molotof kokteyli miktarını güncellemem gerekiyor
                 SaveScript.change = true; // bu yüzden true'ya eşitledim
             }
         }

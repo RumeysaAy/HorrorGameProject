@@ -203,10 +203,20 @@ public class WeaponManager : MonoBehaviour
         fireBottleThrow = true;
     }
 
-    // var olan diğer bir şişeyi veya molotof kokteylini kullanmak için
+    // var olan diğer bir şişeyi kullanmak için
     public void LoadAnotherBottle()
     {
-        if (SaveScript.weaponID == 7 || SaveScript.weaponID == 8)
+        if (SaveScript.weaponID == 7)
+        {
+            ChangeWeapons();
+        }
+    }
+
+    // var olan diğer bir molotof kokteylini kullanmak için
+    // UseButtonCombine düğmesine basıldığında bu fonksiyon çağrılacak
+    public void LoadAnotherFireBottle()
+    {
+        if (SaveScript.weaponID == 8)
         {
             ChangeWeapons();
         }
