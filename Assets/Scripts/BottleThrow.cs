@@ -68,6 +68,18 @@ public class BottleThrow : MonoBehaviour
             // Çizgi yalnızca farenin sağ tuşuna bastığım sürece oluşturulsun
             if (Input.GetMouseButton(1))
             {
+                if (SaveScript.weaponID == 7)
+                {
+                    // eğer şişe ise çizgi mavi renkli olsun
+                    line.material = mBlue;
+                }
+
+                if (SaveScript.weaponID == 8)
+                {
+                    // eğer molotof kokteyli ise çizgi kırmızı renkli olsun
+                    line.material = mRed;
+                }
+
                 // toplam "linePoints" nokta var ve her iki noktanın arasında "pointDistance" birim fark var
                 for (float i = 0; i < linePoints; i += pointDistance)
                 {
@@ -129,6 +141,9 @@ public class BottleThrow : MonoBehaviour
                 // molotof kokteyli attığımda, toplam topladığım şişe miktarını bir eksiltmeliyim.
                 // molotof kokteyli şişe ve kumaştan oluşur
                 SaveScript.weaponAmts[7]--;
+
+                // kumaşın azaltılması
+                SaveScript.itemAmts[3]--;
 
                 // savescript.cs’de toplam topladığım molotof kokteyli miktarını güncellemem gerekiyor
                 SaveScript.change = true; // bu yüzden true'ya eşitledim

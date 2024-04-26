@@ -634,7 +634,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 9f4bec8e796e24629aa490a96e07a6f8, type: 2}
-  m_Tag: 
+  m_Tag: BottleThrown
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -835,7 +835,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: ad8b01f1e17574285b05c3ab51ddcd63, type: 2}
-  m_Tag: 
+  m_Tag: BottleThrown
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -862,7 +862,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: b0940a3200c1844a1bb20825a052862e, type: 2}
-  m_Tag: 
+  m_Tag: BottleThrown
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -1041,7 +1041,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: a138c1540c42e4534b418a2945d99b27, type: 2}
-  m_Tag: 
+  m_Tag: BottleThrown
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -1182,7 +1182,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: bbfba03ec5ca54c938016ae529c5797a, type: 2}
-  m_Tag: 
+  m_Tag: BottleThrown
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 

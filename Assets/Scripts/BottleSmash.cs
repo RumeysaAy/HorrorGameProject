@@ -8,6 +8,7 @@ public class BottleSmash : MonoBehaviour
     private Rigidbody rb;
     private bool playSound = false;
     public GameObject bottleParent;
+    public float destroyTime = 3f; // şişenin yok olma süresi
 
     // molotof kokteyli için
     public bool flames = false;
@@ -34,7 +35,7 @@ public class BottleSmash : MonoBehaviour
             audioPlayer.Play();
             rb.isKinematic = true; // şişe çarptığı yerde kalacak
             // bu dosyanın bulunduğu nesnenin parent nesnesini yok edeceğim
-            Destroy(bottleParent, 3); // 3 saniye sonra
+            Destroy(bottleParent, destroyTime); // destroyTime saniye sonra
         }
 
         if (flames == true)

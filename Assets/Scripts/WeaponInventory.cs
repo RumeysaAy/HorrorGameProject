@@ -86,6 +86,10 @@ public class WeaponInventory : MonoBehaviour
         {
             ChooseWeapon(0);
         }
+
+        // güncel miktarın arayüzde görüntülenmesi için
+        // envanter menüsü her açıldığında seçilen silahın miktarı güncellensin
+        ChooseWeapon(chosenWeaponNumber);
     }
 
     public void ChooseWeapon(int weaponNumber)
