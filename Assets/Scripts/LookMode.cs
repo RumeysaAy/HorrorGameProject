@@ -16,6 +16,7 @@ public class LookMode : MonoBehaviour
     private Light flashLight; // el fenerini kapatıp açmak için kullanacağız
     private bool nightVisionOn = false;
     private bool flashLightOn = false;
+    public GameObject pointer; // ekranın merkezini gösterir (UI)
 
     // Start is called before the first frame update
     void Start()
@@ -118,6 +119,19 @@ public class LookMode : MonoBehaviour
         if (flashLightOn == true)
         {
             FlashLightSwitchOff();
+        }
+
+        if (SaveScript.inventoryOpen == true)
+        {
+            // eğer envanter menü açıksa imleç görünür olsun
+            Cursor.visible = true;
+            // ekranın merkezi envanter açıkken gözükmesin 
+            pointer.SetActive(false);
+        }
+        else
+        {
+            Cursor.visible = false;
+            pointer.SetActive(true);
         }
     }
 
