@@ -31,6 +31,10 @@ public class WeaponManager : MonoBehaviour
     public static bool emptyBottleThrow = false; // boş şişeyi fırlatmak için bunu çağıracağım
     public static bool fireBottleThrow = false; // molotof kokteylini fırlatmak için bunu çağıracağım
 
+    // bir şişe atma işlemi tamamlanmadan herhangi bir saldırıyı engellemek için
+    private AnimatorStateInfo animInfo;
+    private bool canAttack = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,12 +66,26 @@ public class WeaponManager : MonoBehaviour
             }
         }*/
 
+        animInfo = anim.GetCurrentAnimatorStateInfo(0); // animatörün 0. katmanı BaseLayer
+        if (animInfo.IsTag("BottleThrown")) // bu etiketi kullanan animasyonları algılayacak
+        {
+            // Eğer tag’ı BottleThrown olan durum oynatılıyorsa
+            canAttack = false;
+        }
+        else
+        {
+            // bir şişe atma işlemi gerçekleşmiyorsa
+            canAttack = true;
+        }
+
         if (SaveScript.weaponID != currentWeaponID)
         {
             ChangeWeapons();
         }
 
-        if (Input.GetMouseButtonDown(0)) // sol fare tuşu
+        // şişe fırlatılan bir animasyon oynatılmadığı sürece yeni bir saldırı gerçekleşebilir
+        // bir şişe atma işlemi tamamlanmadan oyuncu tarafından herhangi bir saldırının engellenmesi için
+        if (Input.GetMouseButtonDown(0) && canAttack == true) // sol fare tuşu
         {
             if (SaveScript.inventoryOpen == false)
             {

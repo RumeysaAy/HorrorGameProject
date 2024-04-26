@@ -19,6 +19,9 @@ public class BottleSmash : MonoBehaviour
         // bu bileşenler bu dosyayla aynı nesnede bulunur
         audioPlayer = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
+        // şişe herhangi bir nesneyle çarpışmayabilir bu yüzden
+        // şişe 20 saniye sonra yok edilsin
+        Destroy(bottleParent, 20);
     }
 
     // eğer fırlatılan şişe herhangi bir nesne ile çarpışırsa
