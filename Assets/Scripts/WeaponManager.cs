@@ -35,6 +35,9 @@ public class WeaponManager : MonoBehaviour
     private AnimatorStateInfo animInfo;
     private bool canAttack = true;
 
+    private bool sprayEmpty = false; // eğer bir sprey boşsa yani bitmişse
+    private bool stopSpray = false; // spreyi kullanmayı durdurmak için kullanacağım
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,6 +126,9 @@ public class WeaponManager : MonoBehaviour
         // eğer sol tuşa basılı tutuluyorsa ve sprey bitmediyse
         if (Input.GetMouseButton(0) && sprayPanel.GetComponent<SprayScript>().sprayAmount > 0.0f)
         {
+            sprayEmpty = false; // bir sprey bitmemiş
+            stopSpray = false; // bir sprey kullanılıyor
+
             // eğer sprey kullanılıyorsa
             if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
             {
@@ -140,12 +146,14 @@ public class WeaponManager : MonoBehaviour
             }
         }
 
-        // eğer sol tuşa basılı tutmayı bıraktığım anda veya sprey bittiyse
+        // eğer sol tuşa basılı tutmayı bıraktığım anda veya bir sprey bittiyse
         if (Input.GetMouseButtonUp(0) || sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
         {
             // eğer sprey kullanılıyorsa
-            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false)
+            if (SaveScript.weaponID == 6 && SaveScript.inventoryOpen == false && stopSpray == false)
             {
+                stopSpray = true; // bir sprey kullanılmıyor (bittiği için)
+
                 // Release parametresi ile spray return durumuna geçilir
                 anim.SetTrigger("Release");
 
@@ -155,6 +163,18 @@ public class WeaponManager : MonoBehaviour
                 // Spreyi kullanmadığım zaman yani sola basılı tutmayı bıraktığım an ses dursun
                 audioPlayer.Stop();
                 audioPlayer.loop = false;
+            }
+        }
+
+        // bir sprey miktarı sıfır mı?
+        if (sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f && sprayEmpty == false)
+        {
+            sprayEmpty = true; // bir sprey bitmiştir
+            SaveScript.weaponAmts[6]--; // bir sprey azaltılır
+            if (SaveScript.weaponAmts[6] == 0) // eğer hiç sprey kalmadıysa
+            {
+                // envanter menüsünde sprey gözükmesin
+                SaveScript.weaponsPickedUp[6] = false;
             }
         }
     }

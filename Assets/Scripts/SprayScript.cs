@@ -9,13 +9,12 @@ public class SprayScript : MonoBehaviour
     public float sprayAmount = 1.0f; // sprey başlangıçta tamamen dolu olacak
     public float drainTime = 0.1f;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-
+        // sprey miktarı her ekranda görüntülendiğinde güncellensin
+        sprayFill.fillAmount = sprayAmount; // sprey görüntüsünü güncelliyorum
     }
 
-    // Update is called once per frame
     void Update()
     {
         // sola basılı tutarsa spray kullanılacak ve azalacak

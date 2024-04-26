@@ -22,6 +22,7 @@ public class WeaponInventory : MonoBehaviour
     public GameObject useButton, combineButton;
     public GameObject combinePanel, combineUseButton;
     public Image[] combineItems; // çakmak ve kumaş vardır
+    public GameObject sprayPanel; // bir sprey miktarını güncel olarak görüntülemek için
 
     // Start is called before the first frame update
     void Start()
@@ -116,6 +117,16 @@ public class WeaponInventory : MonoBehaviour
             combinePanel.SetActive(false); // her silah seçtiğimizde combine panelin kapanması gerekiyor
             combineButton.SetActive(false);
         }
+
+        if (chosenWeaponNumber == 6)
+        {
+            // sprey için use düğmesini devre dışı bırakacağım
+            useButton.SetActive(false);
+        }
+        else
+        {
+            useButton.SetActive(true);
+        }
     }
 
     public void CombineAction()
@@ -164,6 +175,13 @@ public class WeaponInventory : MonoBehaviour
         if (chosenWeaponNumber == 6) // seçilen silah spray ise
         {
             SaveScript.weaponID = chosenWeaponNumber;
+
+            // bu sprey tamamen bittiyse ve yeniden sprey seçilirse yeni sprey tamamen dolu olacaktır.
+            if (sprayPanel.GetComponent<SprayScript>().sprayAmount <= 0.0f)
+            {
+                // bir spreyin tamamen dolu olduğunu gösterir
+                sprayPanel.GetComponent<SprayScript>().sprayAmount = 1.0f;
+            }
         }
 
         if (chosenWeaponNumber == 7) // seçilen silah bottle ise
